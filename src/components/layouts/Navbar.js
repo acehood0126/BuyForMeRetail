@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full h-[55px] border-b-[1px] border-gray-200 drop-shadow-[0_0_15px_rgba(0,0,0,0.12)] z-10 top-0 bg-white">
+    <nav className="fixed w-full h-[55px] border-b-[1px] border-gray-200 drop-shadow-[0_0_15px_rgba(0,0,0,0.12)] z-10 top-0 bg-[#f9fafc]">
       <div className="w-full h-full mx-auto flex flex-wrap items-center justify-between mt-0">
         <div className="w-full h-[34px] mx-[25px] flex flex-wrap items-center justify-between">
           <Link to="/" className="">
@@ -10,7 +10,7 @@ const Navbar = () => {
           </Link>
 
           <div
-            className="lg:w-auto lg:overflow-hidden w-0 h-full lg:content-center lg:items-center hidden lg:block lg:mt-0 z-20 text-[#12263f] text-[14px] font-Avenir"
+            className="lg:w-auto lg:overflow-hidden w-0 h-full lg:content-center lg:items-center hidden lg:block lg:mt-0 z-20 text-[#12263f] text-[14px]"
             id="nav-content"
           >
             <ul className="list-reset lg:flex justify-center items-center h-full">
