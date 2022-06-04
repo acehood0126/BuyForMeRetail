@@ -8,7 +8,7 @@ const Landing = () => {
           <img src="/static/img/left-tree.svg" alt="" />
         </div>
         <div className="justify-center content-between">
-          <div className="w-full text-[48px] font-bold font-['Avenir-Medium']">
+          <div className="w-full text-[48px] font-extrabold font-Avenir">
             <h1 className="w-full text-center text-[#122844]">
               A Smarter Way to Earn
             </h1>

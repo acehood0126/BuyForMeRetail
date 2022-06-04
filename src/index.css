@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 
-/* @font-face {
+@font-face {
   font-family: "Avenir";
-  src: local("Avenir"), url(./static/fonts/Roboto-Regular.ttf) format("ttf");
-} */
+  src: local("Avenir"), url(./assets/fonts/Avenir\ Medium.ttf) format("ttf");
+}
 
 @tailwind utilities;
 
