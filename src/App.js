@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Navbar" element={<Navbar />} />
+        <Route path="/Nav" element={<Nav />} />
       </Routes>
     </BrowserRouter>
   );
