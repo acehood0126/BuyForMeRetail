@@ -7,7 +7,7 @@ const Landing = () => {
         <div className="pt-[30px]">
           <img src="/static/img/left-tree.svg" alt="" />
         </div>
-        <div className="content-between items-center">
+        <div className="content-between grid grid-cols-1 justify-items-center">
           <div className="w-full text-[48px] font-bold">
             <h1 className="w-full text-center text-darkblue">
               A Smarter Way to Earn
@@ -19,16 +19,21 @@ const Landing = () => {
           <p className="w-full text-center text-lightblue text-[16px] mb-[25px]">
             Join a growing community of people earning more by doing less
           </p>
-          <div className="w-full flex justify-center mb-[17px]">
+          <div className="w-[290px] grid grid-cols-1 justify-items-center">
             <Link to="/">
-              <button className="transition bg-lightgreen hover:bg-darkgreen hover:ease-in rounded-[6px] text-white px-[12px] py-[6px] w-[185px] h-[40px]">
+              <button className="transition bg-lightgreen hover:bg-darkgreen hover:ease-in rounded-[6px] text-white px-[12px] py-[6px] w-[185px] h-[40px] mb-[17px]">
                 Get Started
               </button>
             </Link>
+            <p className="text-lightblue text-[14px]">
+              We don't charge a penny, it's free to use!
+            </p>
+            <img
+              src="/static/img/get-started-arrow.svg"
+              className="absolute ml-[106px] mt-[17px]"
+              alt=""
+            />
           </div>
-          <p className="w-full text-center text-lightblue text-[14px]">
-            We don't charge a penny, it's free to use!
-          </p>
         </div>
         <div className="pt-[30px]">
           <img src="/static/img/right-tree.svg" alt="" />
