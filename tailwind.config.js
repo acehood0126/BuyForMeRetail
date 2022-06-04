@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        AvenirMedium: ["Avenir"],
+        Avenir: ["Avenir"],
       },
       colors: {
         transparent: "transparent",
