@@ -9,8 +9,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Nasasv" element={<Nasasv />} />
-        <Route path="/Navbar" element={<Navbar />} />
+        <Route path="/asdfv" element={<Nasasv />} />
+        <Route path="/asdff" element={<Navbar />} />
         <Route path="/notouch" element={<Navbar />} />
       </Routes>
     </BrowserRouter>
