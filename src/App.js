@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Nasasv" element={<Nasasv />} />
-        <Route path="/Nav" element={<Nav />} />
+        <Route path="/Navbar" element={<Navbar />} />
       </Routes>
     </BrowserRouter>
   );
