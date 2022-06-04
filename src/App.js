@@ -12,6 +12,7 @@ function App() {
         <Route path="/Nasasv" element={<Nasasv />} />
         <Route path="/Nav" element={<Nav />} />
         <Route path="/Navbar" element={<Navbar />} />
+        <Route path="/notouch" element={<Navbar />} />
       </Routes>
     </BrowserRouter>
   );
