@@ -10,6 +10,7 @@ const Howitworks = () => {
             It's Easy
           </h1>
         </div>
+        
       </div>
     </div>
   );
