@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Landing = () => {
+const Landing = () => { 
   return (
     <div className="w-full h-[403px] bg-white mt-[54px] px-[80px] pt-[75px] pb-[45px]">
       <div className="w-full h-full grid grid-cols-[234px_auto_234px]">

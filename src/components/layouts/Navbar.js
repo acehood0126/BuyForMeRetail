@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
             <li className="navlink ">
               <Link
-                to="/"
+                to="/register"
                 className="inline-block no-underline text-[#3bbd96] border-[1px] border-[#3bbd96] hover:bg-[#3bbd96] hover:text-white py-[8px] px-[24px] rounded-[5px] mr-[5px]"
               >
                 Sign Up
