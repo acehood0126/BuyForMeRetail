@@ -7,7 +7,7 @@ import Profitrewards from "../components/layouts/Profitrewards";
 
 const Dashboard = () => {
   return (
-    <div className="font-Avenir">
+    <div className="font-AvenirMedium">
       <Navbar />
       <Landing />
       <Joinus />

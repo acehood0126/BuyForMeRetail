@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Avenir";
-  src: local("Avenir"), url(./assets/fonts/Avenir\ Medium.ttf) format("ttf");
+  src: url(./assets/fonts/Metropolis/Metropolis-Thin.otf) format("otf");
 }
 
 @tailwind utilities;
