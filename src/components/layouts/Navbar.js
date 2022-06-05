@@ -41,7 +41,7 @@ const Navbar = () => {
               </li>
               <li className="navlink">
                 <Link
-                  to="/"
+                  to="/login"
                   className="inline-block hover:text-lightgreen no-underline py-[8px] px-[24px] rounded-[5px] mr-[5px] h-[34px] leading-[18px]"
                 >
                   Sign In
@@ -49,7 +49,7 @@ const Navbar = () => {
               </li>
               <li className="navlink">
                 <Link
-                  to="/"
+                  to="/register"
                   className="inline-block no-underline text-lightgreen border-[1px] border-lightgreen hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-[5px] mr-[5px] h-[34px] font-bold"
                 >
                   Sign Up
