@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li className="navlink">
               <Link
-                to="/"
+                to="/login"
                 className="inline-block hover:text-[#3bbd96] no-underline py-[8px] px-[24px] rounded-[5px] mr-[5px]"
               >
                 Sign In

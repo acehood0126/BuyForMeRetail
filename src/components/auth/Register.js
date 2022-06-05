@@ -20,16 +20,16 @@ const Register = () => {
           </p>    
         </div>
         
-        <form action="#" class="p-8 pt-0">
-          <div class="mb-6">
-              <label for="email" class="mb-3 block text-gray-700">Email address*</label>
-              <input type="email" id="email" class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full" placeholder="name@address.com" required/>
+        <form action="#" className="p-8 pt-0">
+          <div className="mb-6">
+              <label htmlFor="email" className="mb-3 block text-gray-700">Email address*</label>
+              <input type="email" id="email" className="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full" placeholder="name@address.com" required/>
           </div>
-          <div class="mb-6">
-              <label for="email" class="mb-3 block text-gray-700">Password*</label>
-              <input type="password" id="password" class="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full" placeholder="password" required/>
+          <div className="mb-6">
+              <label htmlFor="email" className="mb-3 block text-gray-700">Password*</label>
+              <input type="password" id="password" className="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full" placeholder="password" required/>
           </div>
-          <button type="submit" class="py-3 px-12 bg-teal-500 hover:bg-teal-600 mr-5 rounded-md text-white text-lg focus:outline-none w-full">Next</button>
+          <button type="submit" className="py-3 px-12 bg-teal-500 hover:bg-teal-600 mr-5 rounded-md text-white text-lg focus:outline-none w-full">Next</button>
           <div className="flex w-full grid-cols-3 mt-6 h-[60px]">
             <div className="h-full bg-[#3a579d] hover:bg-[#254ba7]  rounded-l-md text-white text-lg focus:outline-none w-full flex justify-center items-center">
               <FaFacebookF className="w-[30px] h-[30px]"/>
@@ -48,10 +48,11 @@ const Register = () => {
           <p className="text-[16px] mr-2">
             Already have an account?
           </p>
-          
-          <p className="text-[16px] text-[#2aac8a]">
-            Sign in
-          </p>    
+          <Link to="/login">
+            <p className="text-[16px] text-[#2aac8a]">
+              Sign in
+            </p>    
+          </Link>
           
         </div>
 
