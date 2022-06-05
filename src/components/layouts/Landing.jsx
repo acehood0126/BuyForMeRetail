@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+import lefttree from "../../assets/img/left-tree.svg";
+import getstartedarrow from "../../assets/img/get-started-arrow.svg";
+import righttree from "../../assets/img/right-tree.svg";
 
-const Landing = () => { 
+const Landing = () => {
   return (
     <div className="w-full bg-specwhite mt-[54px] px-[80px] pt-[75px] pb-[45px]">
       <div className="w-full h-full grid grid-cols-[234px_auto_234px]">
         <div className="pt-[30px]">
-          <img src="/static/img/left-tree.svg" alt="" />
+          <img src={lefttree} alt="" />
         </div>
         <div className="content-between grid grid-cols-1 justify-items-center">
           <div className="w-full text-[48px] font-bold">
@@ -29,14 +32,14 @@ const Landing = () => {
               We don't charge a penny, it's free to use!
             </p>
             <img
-              src="/static/img/get-started-arrow.svg"
+              src={getstartedarrow}
               className="absolute ml-[106px] mt-[17px]"
               alt=""
             />
           </div>
         </div>
         <div className="pt-[30px]">
-          <img src="/static/img/right-tree.svg" alt="" />
+          <img src={righttree} alt="" />
         </div>
       </div>
     </div>

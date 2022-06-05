@@ -78,6 +78,11 @@ const FAQs = () => {
             />
           ))}
         </div>
+        <Link to="/">
+          <button className="transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] text-white text-[14px] font-bold px-[12px] py-[6px] w-[185px] h-[40px]">
+            View More
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Accordion = ({ title, content }) => {
   return (
     <div
       onClick={HandleOpening}
-      className="bg-white border-[1px] rounded-[8px] border-lightblue/20 mb-[12px] hover:drop-shadow-xl transition duration-300 ease-out hover:ease-in"
+      className="cursor-pointer bg-white border-[1px] rounded-[8px] border-lightblue/20 mb-[12px] hover:drop-shadow-xl transition duration-300 ease-out hover:ease-in"
     >
       <div className="px-[28px] py-[20px] flex justify-between text-lightblue rounded-[8px] border-b-[1px]">
         <h4 className="font-bold">{title}</h4>

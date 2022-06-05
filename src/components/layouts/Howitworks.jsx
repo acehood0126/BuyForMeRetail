@@ -1,3 +1,9 @@
+import buyandship from "../../assets/img/buy-and-ship.svg";
+import buyandshiparrow from "../../assets/img/buy-and-ship-arrow.svg";
+import getpaid from "../../assets/img/get-paid.svg";
+import getpaidarrow from "../../assets/img/get-paid-arrow.svg";
+import earnreward from "../../assets/img/earn-reward.svg";
+
 const Howitworks = () => {
   return (
     <div className="w-full px-[60px] py-[45px] flex justify-center bg-specwhite">
@@ -31,17 +37,17 @@ const Howitworks = () => {
               </div>
             </div>
             <div className="col-span-5 flex justify-end px-[15px]">
-              <img src="/static/img/buy-and-ship.svg" alt="" />
+              <img src={buyandship} alt="" />
             </div>
             <img
-              src="/static/img/buy-and-ship-arrow.svg"
+              src={buyandshiparrow}
               className="absolute mt-[191px] ml-[300px]"
               alt=""
             />
           </div>
           <div className="mx-[-15px] grid grid-cols-12 mb-[116px]">
             <div className="col-span-5 flex justify-center">
-              <img src="/static/img/get-paid.svg" alt="" />
+              <img src={getpaid} alt="" />
             </div>
             <div className="col-span-7 flex justify-end items-end">
               <div className="w-[539px] h-[132px] bg-white rounded-full px-[34px] py-[16px] drop-shadow-xl flex items-center">
@@ -59,7 +65,7 @@ const Howitworks = () => {
               </div>
             </div>
             <img
-              src="/static/img/get-paid-arrow.svg"
+              src={getpaidarrow}
               className="absolute mt-[191px] ml-[300px] rotate-[-2deg]"
               alt=""
             />
@@ -81,7 +87,7 @@ const Howitworks = () => {
               </div>
             </div>
             <div className="col-span-5 flex justify-center">
-              <img src="/static/img/earn-reward.svg" alt="" />
+              <img src={earnreward} alt="" />
             </div>
           </div>
         </div>
