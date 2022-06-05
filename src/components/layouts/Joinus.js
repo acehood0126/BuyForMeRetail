@@ -8,10 +8,10 @@ const Joinus = () => {
           </p>
           <input
             type="email"
-            className="w-[254px] text-[14px] h-full px-[12px] py-[6px] border-[1px] rounded-l-[4px] focus:outline-none focus:border-[1px]"
+            className="w-[254px] text-[14px] h-full px-[12px] py-[6px] border-[1px] rounded-l-[4px] focus:outline-none focus:border-[1px] focus:drop-shadow-[0px_0px_2px_rgb(0,123,255)] transition ease-out focus:ease-in text-lightblue"
             placeholder="Enter Email"
           />
-          <button className="transition bg-[#3bbd96] hover:bg-[#2aac8a] hover:ease-in w-[70px] h-full text-white text-[14px] rounded-r-[5px]">
+          <button className="transition bg-[#3bbd96] hover:bg-[#2aac8a] ease-out hover:ease-in w-[70px] h-full text-white text-[14px] rounded-r-[5px]">
             Join
           </button>
         </div>

@@ -5,6 +5,7 @@ import Landing from "../components/layouts/Landing";
 import Joinus from "../components/layouts/Joinus";
 import Profitrewards from "../components/layouts/Profitrewards";
 import Howitworks from "../components/layouts/Howitworks";
+import Whatsinside from "../components/layouts/Whatsinside";
 import Footer from "../components/layouts/Footer";
 
 const Dashboard = () => {
@@ -15,6 +16,7 @@ const Dashboard = () => {
       <Joinus />
       <Profitrewards />
       <Howitworks />
+      <Whatsinside />
       <Footer />
     </div>
   );
