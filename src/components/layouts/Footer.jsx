@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 const Footer = () => {
   return (
     <div className="w-full px-[30px] h-[53px] flex justify-between items-center bg-darkblue text-white text-[14px]">

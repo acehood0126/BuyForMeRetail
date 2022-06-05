@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Dashboard from "./pages/Dashboard";
-import Register from "./components/auth/Register"
-import Login from "./components/auth/Login"
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function App() {
   return (

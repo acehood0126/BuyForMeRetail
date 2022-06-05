@@ -6,6 +6,7 @@ import Joinus from "../components/layouts/Joinus";
 import Profitrewards from "../components/layouts/Profitrewards";
 import Howitworks from "../components/layouts/Howitworks";
 import Whatsinside from "../components/layouts/Whatsinside";
+import FAQs from "../components/layouts/Faqs";
 import Footer from "../components/layouts/Footer";
 
 const Dashboard = () => {
@@ -17,6 +18,7 @@ const Dashboard = () => {
       <Profitrewards />
       <Howitworks />
       <Whatsinside />
+      <FAQs />
       <Footer />
     </div>
   );

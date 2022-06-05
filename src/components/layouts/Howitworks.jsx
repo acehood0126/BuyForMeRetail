@@ -16,7 +16,7 @@ const Howitworks = () => {
           <div className="mx-[-15px] grid grid-cols-12 mb-[116px]">
             <div className="col-span-7 flex justify-end items-end px-[15px]">
               <div className="w-[539px] h-[132px] bg-white rounded-full px-[34px] py-[16px] drop-shadow-xl flex items-center">
-                <div className="w-[50px] h-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
+                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
                   1
                 </div>
                 <div className="ml-[20px]">
@@ -39,14 +39,13 @@ const Howitworks = () => {
               alt=""
             />
           </div>
-          .
           <div className="mx-[-15px] grid grid-cols-12 mb-[116px]">
             <div className="col-span-5 flex justify-center">
               <img src="/static/img/get-paid.svg" alt="" />
             </div>
             <div className="col-span-7 flex justify-end items-end">
               <div className="w-[539px] h-[132px] bg-white rounded-full px-[34px] py-[16px] drop-shadow-xl flex items-center">
-                <div className="w-[50px] h-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
+                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
                   2
                 </div>
                 <div className="ml-[20px]">
@@ -68,7 +67,7 @@ const Howitworks = () => {
           <div className="mx-[-15px] grid grid-cols-12">
             <div className="col-span-7 flex justify-end items-end">
               <div className="w-[539px] h-[132px] bg-white rounded-full px-[34px] py-[16px] drop-shadow-xl flex items-center">
-                <div className="w-[50px] h-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
+                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
                   3
                 </div>
                 <div className="ml-[20px]">

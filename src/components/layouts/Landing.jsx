@@ -20,7 +20,7 @@ const Landing = () => {
             Join a growing community of people earning more by doing less
           </p>
           <div className="w-[290px] grid grid-cols-1 justify-items-center">
-            <Link to="/">
+            <Link to="/register">
               <button className="transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] text-white px-[12px] py-[6px] w-[185px] h-[40px] mb-[17px]">
                 Get Started
               </button>
