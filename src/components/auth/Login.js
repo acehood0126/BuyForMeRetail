@@ -5,12 +5,11 @@ import { FaGooglePlusG } from "react-icons/fa";
 
 const Login = () => {
   return (
-    <div className="w-full flex justify-center items-center h-screen">
-      <div className="w-[500px]  bg-gray-100 shadow-sm rounded-md ">
-        <div className="w-full text-center text-[32px] my-[10px]">Sign In</div>
+    <div className="w-full flex justify-center items-center h-screen text-lightblue">
+      <div className="w-[500px] bg-gray-100 shadow-sm rounded-md">
+        <div className="w-full text-center text-[32px] my-[10px] font-bold text-darkblue">Sign In</div>
         <div className="w-full mb-[20px] flex justify-center">
           <p className="text-[16px] mr-2">Access your account's dashboard.</p>
-          <p className="text-[16px] text-[#2aac8a]">BuyForRetail.</p>
         </div>
 
         <form action="#" className="p-8 pt-0">
@@ -46,7 +45,7 @@ const Login = () => {
               id="flexCheckDefault"
             />
             <label
-              class="form-check-label inline-block text-gray-800"
+              class="form-check-label inline-block text-lightblue"
               htmlFor="flexCheckDefault"
             >
               Remember me
@@ -54,7 +53,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="py-3 px-12 bg-teal-500 hover:bg-teal-600 mr-5 rounded-md text-white text-lg focus:outline-none w-full"
+            className="py-3 px-12 transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] mr-5 text-white text-lg focus:outline-none w-full text-[14px]"
           >
             Next
           </button>
