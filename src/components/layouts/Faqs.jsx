@@ -1,6 +1,7 @@
 /* eslint-disable no-sequences */
 import { Link } from "react-router-dom";
 import Accordion from "../Accordion";
+import faqsideimg from "../../assets/img/faq-side-img.svg";
 
 const FAQs = () => {
   const data = [
@@ -33,10 +34,10 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="w-full px-[60px] py-[45px] flex justify-center text-lightblue bg-specwhite">
-      <div className="w-[1140px] px-[15px] grid grid-cols-1 justify-items-center">
+    <div className="w-full px-[60px] py-[45px] relative flex justify-center text-lightblue bg-specwhite">
+      <div className="w-[1140px] px-[15px]">
         {/* Header */}
-        <div className="mb-[30px] grid grid-cols-1 justify-items-center">
+        <div className="w-full mb-[30px] grid grid-cols-1 justify-items-center">
           <p className="uppercase text-[12px] text-lightgreen font-bold mb-[15px]">
             learn more
           </p>
@@ -78,11 +79,18 @@ const FAQs = () => {
             />
           ))}
         </div>
-        <Link to="/">
-          <button className="transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] text-white text-[14px] font-bold px-[12px] py-[6px] w-[185px] h-[40px]">
-            View More
-          </button>
-        </Link>
+        <div className="w-full grid grid-cols-1 justify-items-center mt-[30px]">
+          <Link to="/">
+            <button className="transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] text-white text-[14px] font-bold px-[12px] py-[6px] w-[185px] h-[40px]">
+              View More
+            </button>
+          </Link>
+        </div>
+        <img
+          src={faqsideimg}
+          className="absolute right-[8px] bottom-[3px]"
+          alt=""
+        />
       </div>
     </div>
   );

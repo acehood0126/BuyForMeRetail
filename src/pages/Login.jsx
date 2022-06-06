@@ -5,9 +5,11 @@ import { FaGooglePlusG } from "react-icons/fa";
 
 const Login = () => {
   return (
-    <div className="w-full flex justify-center items-center h-screen text-lightblue">
-      <div className="w-[500px] bg-gray-100 shadow-sm rounded-md">
-        <div className="w-full text-center text-[32px] my-[10px] font-bold text-darkblue">Sign In</div>
+    <div className="w-full bg-[#ecf0f3] flex justify-center items-center h-screen text-lightblue">
+      <div className="w-[500px] bg-[#ecf0f3] rounded-[20px] drop-shadow-threeDbox">
+        <div className="w-full text-center text-[32px] mt-[20px] mb-[10px] font-bold text-darkblue">
+          Sign In
+        </div>
         <div className="w-full mb-[20px] flex justify-center">
           <p className="text-[16px] mr-2">Access your account's dashboard.</p>
         </div>

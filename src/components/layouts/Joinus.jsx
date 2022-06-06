@@ -7,8 +7,7 @@ const Joinus = () => {
             Join our email list to stay up to date on our latest deals
           </p>
           <input
-            type="email"
-            className="w-[254px] text-[14px] h-full px-[12px] py-[6px] border-[1px] border-lightblue border-opacity-20 rounded-l-[4px] focus:outline-none focus:drop-shadow-[0px_0px_3px_rgba(0,123,255,0.25)] transition ease-out focus:ease-in text-lightblue"
+            className="w-[254px] text-[14px] h-full px-[12px] py-[6px] border-[1px] border-lightblue border-opacity-20 rounded-l-[4px] focus:outline-none focus:drop-shadow-blue transition ease-out focus:ease-in text-lightblue"
             placeholder="Enter Email"
           />
           <button className="transition bg-[#3bbd96] hover:bg-[#2aac8a] ease-out hover:ease-in w-[70px] h-full text-white text-[14px] rounded-r-[5px]">

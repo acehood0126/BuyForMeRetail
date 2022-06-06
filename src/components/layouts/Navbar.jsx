@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logonew from "../../assets/img/logo-new.svg"
+import logonew from "../../assets/img/logo-new.svg";
 const Navbar = () => {
   return (
     <nav className="fixed w-full h-[55px] border-b-[1px] border-gray-200 drop-shadow-[0_0_15px_rgba(0,0,0,0.1)] z-10 top-0 bg-specwhite">

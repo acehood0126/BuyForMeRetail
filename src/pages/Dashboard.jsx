@@ -7,9 +7,18 @@ import Profitrewards from "../components/layouts/Profitrewards";
 import Howitworks from "../components/layouts/Howitworks";
 import Whatsinside from "../components/layouts/Whatsinside";
 import FAQs from "../components/layouts/Faqs";
+import Contactus from "../components/layouts/Contactus";
 import Footer from "../components/layouts/Footer";
 
 const Dashboard = () => {
+  // const howitworksref = useRef();
+  // const benefitsref = useRef();
+  // const faqsref = useRef();
+
+  // const handlescrollhiw = () => {
+  //   howitworksref.current.scrollIntoView({ behavior: "smooth" });
+  // };
+
   return (
     <div className="font-Avenir">
       <Navbar />
@@ -19,6 +28,7 @@ const Dashboard = () => {
       <Howitworks />
       <Whatsinside />
       <FAQs />
+      <Contactus />
       <Footer />
     </div>
   );
