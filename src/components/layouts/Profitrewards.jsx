@@ -9,8 +9,8 @@ import Profitbox from "../Profitbox";
 
 const Profitrewards = () => {
   return (
-    <div className="w-full px-[60px] py-[45px] bg-specwhite">
-      <div className="mx-[161px] px-[15px]">
+    <div className="w-full px-[60px] py-[45px] flex justify-center bg-specwhite">
+      <div className="max-w-[1230px] px-[15px]">
         <div className="w-full mb-[30px]">
           <p className="text-center uppercase text-[12px] text-lightgreen font-bold mb-[15px]">
             what are the benefits
@@ -19,7 +19,7 @@ const Profitrewards = () => {
             Profit in Rewards
           </h1>
         </div>
-        <div className="w-full grid grid-cols-3 gap-[40px] justify-items-center text-lightblue">
+        <div className="w-full grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[40px] justify-items-center text-lightblue">
           <Profitbox
             pic={airmile}
             heading="Airmiles"
