@@ -3,10 +3,14 @@ import buyandshiparrow from "../../assets/img/buy-and-ship-arrow.svg";
 import getpaid from "../../assets/img/get-paid.svg";
 import getpaidarrow from "../../assets/img/get-paid-arrow.svg";
 import earnreward from "../../assets/img/earn-reward.svg";
+import { forwardRef } from "react";
 
-const Howitworks = () => {
+const Howitworks = forwardRef(({ onhiwClick }, ref) => {
   return (
-    <div className="w-full px-[60px] py-[45px] flex justify-center bg-specwhite">
+    <div
+      ref={ref}
+      className="w-full px-[60px] py-[45px] flex justify-center bg-specwhite"
+    >
       <div className="w-[1140px] px-[15px]">
         {/* Header */}
         <div className="w-full mb-[30px]">
@@ -94,6 +98,6 @@ const Howitworks = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Howitworks;

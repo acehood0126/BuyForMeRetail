@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import Navbar from "../components/layouts/Navbar";
 import Landing from "../components/layouts/Landing";
@@ -11,21 +11,22 @@ import Contactus from "../components/layouts/Contactus";
 import Footer from "../components/layouts/Footer";
 
 const Dashboard = () => {
-  // const howitworksref = useRef();
+  //const refs = useRef([]);
+  const howitworksref = useRef(null);
   // const benefitsref = useRef();
   // const faqsref = useRef();
 
-  // const handlescrollhiw = () => {
-  //   howitworksref.current.scrollIntoView({ behavior: "smooth" });
-  // };
+  const handlescrollhiw = () => {
+    howitworksref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="font-Avenir">
-      <Navbar />
+      <Navbar ref={howitworksref} onhiwClick={handlescrollhiw} />
       <Landing />
       <Joinus />
       <Profitrewards />
-      <Howitworks />
+      <Howitworks ref={howitworksref} onhiwClick={handlescrollhiw} />
       <Whatsinside />
       <FAQs />
       <Contactus />

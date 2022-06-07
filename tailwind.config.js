@@ -19,7 +19,7 @@ module.exports = {
       },
       dropShadow: {
         blue: "0px 0px 2px rgb(0, 123, 255)",
-        "threeDbox": [
+        threeDbox: [
           "10px 10px 10px rgb(209, 217, 230)",
           "-10px -10px 10px rgb(249, 249, 249)",
         ],
