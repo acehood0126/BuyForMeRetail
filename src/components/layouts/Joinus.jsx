@@ -1,7 +1,7 @@
 const Joinus = () => {
   return (
-    <div className="w-full h-[70px] border-[1px] border-[#3bbd96] border-opacity-30 bg-[#3bbd96] bg-opacity-10">
-      <div className="h-full mx-[220px] px-[15px]">
+    <div className="w-full h-[70px] mt-[50px] bg-[#ecf0f3]">
+      <div className="h-full mx-[220px] px-[15px] bg-[#ecf0f3] rounded-full drop-shadow-threeDbox">
         <div className="h-full py-[15px] flex justify-center items-center">
           <p className="text-[14px] text-[#3b516c] pr-[25px]">
             Join our email list to stay up to date on our latest deals

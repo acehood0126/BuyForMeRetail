@@ -7,10 +7,7 @@ import { forwardRef } from "react";
 
 const Howitworks = forwardRef(({ onhiwClick }, ref) => {
   return (
-    <div
-      ref={ref}
-      className="w-full px-[60px] py-[45px] flex justify-center bg-specwhite"
-    >
+    <div ref={ref} className="w-full px-[60px] py-[45px] flex justify-center">
       <div className="w-[1140px] px-[15px]">
         {/* Header */}
         <div className="w-full mb-[30px]">
@@ -25,8 +22,8 @@ const Howitworks = forwardRef(({ onhiwClick }, ref) => {
         <div className="w-full">
           <div className="mx-[-15px] grid grid-cols-12 mb-[116px]">
             <div className="col-span-7 flex justify-end items-end px-[15px]">
-              <div className="w-[539px] h-[132px] bg-white rounded-full px-[34px] py-[16px] drop-shadow-xl flex items-center">
-                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
+              <div className="transition ease-linear drop-shadow-threeDbox hover:drop-shadow-none w-[539px] h-[132px] bg-specwhite rounded-full px-[34px] py-[16px] flex items-center">
+                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full border-dashed border-lightgreen border-[1px] flex justify-center items-center text-lightgreen font-bold text-[24px]">
                   1
                 </div>
                 <div className="ml-[20px]">
@@ -54,8 +51,8 @@ const Howitworks = forwardRef(({ onhiwClick }, ref) => {
               <img src={getpaid} alt="" />
             </div>
             <div className="col-span-7 flex justify-end items-end">
-              <div className="w-[539px] h-[132px] bg-white rounded-full px-[34px] py-[16px] drop-shadow-xl flex items-center">
-                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
+              <div className="transition ease-linear drop-shadow-threeDbox hover:drop-shadow-none bg-specwhite w-[539px] h-[132px] rounded-full px-[34px] py-[16px] flex items-center">
+                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full border-dashed border-lightgreen border-[1px] flex justify-center items-center text-lightgreen font-bold text-[24px]">
                   2
                 </div>
                 <div className="ml-[20px]">
@@ -76,8 +73,8 @@ const Howitworks = forwardRef(({ onhiwClick }, ref) => {
           </div>
           <div className="mx-[-15px] grid grid-cols-12">
             <div className="col-span-7 flex justify-end items-end">
-              <div className="w-[539px] h-[132px] bg-white rounded-full px-[34px] py-[16px] drop-shadow-xl flex items-center">
-                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full bg-[#f2f6fb] flex justify-center items-center text-lightgreen font-bold text-[24px]">
+              <div className="transition ease-linear drop-shadow-threeDbox hover:drop-shadow-none bg-specwhite w-[539px] h-[132px] rounded-full px-[34px] py-[16px] flex items-center">
+                <div className="w-[50px] h-[50px] min-w-[50px] rounded-full border-dashed border-lightgreen border-[1px] flex justify-center items-center text-lightgreen font-bold text-[24px]">
                   3
                 </div>
                 <div className="ml-[20px]">

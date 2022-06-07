@@ -15,7 +15,7 @@ const Navbar = forwardRef(({ onhiwClick }, ref) => {
     <nav
       className={classNames(
         scrollPosition > 0
-          ? "drop-shadow-md bg-white/70 backdrop-blur-sm"
+          ? "drop-shadow-md bg-specwhite/70 backdrop-blur-sm"
           : "drop-shadow-none bg-none",
         "fixed w-full h-[55px] z-10 top-0 transition ease-linear"
       )}

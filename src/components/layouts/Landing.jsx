@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div
       style={{ backgroundImage: `url('${landingback}')` }}
-      className="w-full h-screen px-[80px] pt-[129px] bg-cover bg-center pb-[45px] overflow-hidden"
+      className="bg-[#ecf0f3] w-full h-screen px-[80px] pt-[129px] bg-cover bg-bottom pb-[45px] overflow-hidden"
     >
       {/* <img src={macbook} alt="" /> */}
       <div className="w-full h-full grid grid-cols-5">
@@ -29,7 +29,7 @@ const Landing = () => {
             </p>
             <div className="w-[290px] grid grid-cols-1 justify-items-center">
               <Link to="/register" className="mb-[17px]">
-                <button className="transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] text-white px-[12px] py-[6px] w-[185px] h-[40px]">
+                <button className="transition ease-linear bg-lightgreen hover:bg-darkgreen rounded-[6px] text-white px-[12px] py-[6px] w-[185px] h-[40px]">
                   Get Started
                 </button>
               </Link>

@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import fullnameicon from "../../assets/img/full-name-icon.svg";
 import emailicon from "../../assets/img/email-icon.svg";
 import subjecticon from "../../assets/img/subject-icon.svg";
-import messageicon from "../../assets/img/message-icon.svg"
+import messageicon from "../../assets/img/message-icon.svg";
+
+import Compoundinput from "../Compoundinput";
 
 const Contactus = () => {
   return (
@@ -25,42 +27,14 @@ const Contactus = () => {
           <div className="w-[918px] grid grid-cols-1">
             <div className="w-full grid grid-cols-2 justify-items-center mb-[16px]">
               <div className="w-full h-full px-[15px]">
-                <div className="w-full h-[45px] relative">
-                  <span className="absolute inset-y-0 left-0 flex items-center pl-[10px] z-10">
-                    <img
-                      src={fullnameicon}
-                      className="w-[15px] h-[15px]"
-                      alt=""
-                    />
-                  </span>
-                  <input
-                    className="w-full border-[1px] h-[45px] px-[30px] rounded-[4px] border-lightblue border-opacity-20 focus:outline-none focus:drop-shadow-blue transition ease-out focus:ease-in text-lightblue"
-                    placeholder="Full name *"
-                  />
-                </div>
+                <Compoundinput icon={fullnameicon} placeholder="Full name *" />
               </div>
               <div className="w-full h-full px-[15px]">
-                <div className="w-full h-[45px] relative">
-                  <span className="absolute inset-y-0 left-0 flex items-center pl-[10px] z-10">
-                    <img src={emailicon} className="w-[15px] h-[15px]" alt="" />
-                  </span>
-                  <input
-                    className="w-full border-[1px] h-[45px] px-[30px] rounded-[4px] border-lightblue border-opacity-20 focus:outline-none focus:drop-shadow-blue transition ease-out focus:ease-in text-lightblue"
-                    placeholder="Email *"
-                  />
-                </div>
+                <Compoundinput icon={emailicon} placeholder="Email *" />
               </div>
             </div>
             <div className="w-full h-[45px] px-[15px] mb-[16px]">
-              <div className="w-full h-[45px] relative">
-                <span className="absolute inset-y-0 left-0 flex items-center pl-[10px] z-10">
-                  <img src={subjecticon} className="w-[15px] h-[15px]" alt="" />
-                </span>
-                <input
-                  className="w-full border-[1px] h-[45px] px-[30px] rounded-[4px] border-lightblue border-opacity-20 focus:outline-none focus:drop-shadow-blue transition ease-out focus:ease-in text-lightblue"
-                  placeholder="Subject *"
-                />
-              </div>
+              <Compoundinput icon={subjecticon} placeholder="Subject *" />
             </div>
             <div className="w-full px-[15px] mb-[16px]">
               <div className="w-full relative">
@@ -73,7 +47,6 @@ const Contactus = () => {
                 />
               </div>
             </div>
-            
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="font-Avenir">
+    <div className="font-Avenir bg-[#ecf0f3]">
       <Navbar ref={howitworksref} onhiwClick={handlescrollhiw} />
       <Landing />
       <Joinus />
