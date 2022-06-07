@@ -1,8 +1,25 @@
+import { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import logonew from "../../assets/img/logo-new.svg";
-const Navbar = () => {
+import { useScrollPosition } from "../../hooks/useScrollPosition";
+
+const Navbar = forwardRef(({ onhiwClick }, ref) => {
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
+
+  const scrollPosition = useScrollPosition();
+
   return (
-    <nav className="fixed w-full h-[55px] border-b-[1px] border-gray-200 drop-shadow-[0_0_15px_rgba(0,0,0,0.1)] z-10 top-0 bg-specwhite">
+    // <nav className="fixed w-full h-[55px] border-b-[1px] border-gray-200 drop-shadow-[0_0_15px_rgba(0,0,0,0.1)] z-10 top-0 bg-specwhite">
+    <nav
+      className={classNames(
+        scrollPosition > 0
+          ? "drop-shadow-md bg-specwhite/70 backdrop-blur-sm"
+          : "drop-shadow-none bg-none",
+        "fixed w-full h-[55px] z-10 top-0 transition ease-linear"
+      )}
+    >
       <div className="w-full h-full mx-auto flex flex-wrap items-center justify-between mt-0">
         <div className="w-full h-[34px] mx-[25px] flex flex-wrap items-center justify-between">
           {/* Logo */}
@@ -16,17 +33,17 @@ const Navbar = () => {
           >
             <ul className="list-reset lg:flex justify-center items-center h-full">
               <li className="navlink navlink_selected">
-                <Link
-                  to="/"
-                  className="inline-block hover:text-lightgreen no-underline py-[8px] px-[24px] rounded-[5px] mr-[5px] h-[34px] leading-[18px]"
+                <button
+                  onClick={onhiwClick}
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   How it Works
-                </Link>
+                </button>
               </li>
               <li className="navlink">
                 <Link
                   to="/"
-                  className="inline-block hover:text-lightgreen no-underline py-[8px] px-[24px] rounded-[5px] mr-[5px] h-[34px] leading-[18px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Benefits
                 </Link>
@@ -34,7 +51,7 @@ const Navbar = () => {
               <li className="navlink">
                 <Link
                   to="/"
-                  className="inline-block hover:text-lightgreen no-underline py-[8px] px-[24px] rounded-[5px] mr-[5px] h-[34px] leading-[18px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   FAQs
                 </Link>
@@ -42,7 +59,7 @@ const Navbar = () => {
               <li className="navlink">
                 <Link
                   to="/login"
-                  className="inline-block hover:text-lightgreen no-underline py-[8px] px-[24px] rounded-[5px] mr-[5px] h-[34px] leading-[18px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Sign In
                 </Link>
@@ -50,7 +67,7 @@ const Navbar = () => {
               <li className="navlink">
                 <Link
                   to="/register"
-                  className="inline-block no-underline text-lightgreen border-[1px] border-lightgreen hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-[5px] mr-[5px] h-[34px] font-bold"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Sign Up
                 </Link>
@@ -61,6 +78,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+});
 
 export default Navbar;
