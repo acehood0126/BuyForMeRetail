@@ -19,7 +19,7 @@ const Profitrewards = () => {
             Profit in Rewards
           </h1>
         </div>
-        <div className="w-full grid grid-cols-3 justify-items-center text-lightblue">
+        <div className="w-full grid grid-cols-3 gap-[40px] justify-items-center text-lightblue">
           <Profitbox
             pic={airmile}
             heading="Airmiles"
