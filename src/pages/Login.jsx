@@ -18,7 +18,6 @@ const Login = () => {
           <div className="w-full mb-[20px] flex justify-center">
             <p className="text-[16px] mr-2">Access your account's dashboard.</p>
           </div>
-
           <form action="#" className="p-8 pt-0">
             <div className="mb-6">
               <label htmlFor="email" className="mb-3 block text-gray-700">
@@ -44,19 +43,26 @@ const Login = () => {
                 required
               />
             </div>
-            <div className="mb-[20px]">
-              <input
-                className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label
-                className="form-check-label inline-block text-lightblue"
-                htmlFor="flexCheckDefault"
-              >
-                Remember me
-              </label>
+            <div className="mb-2 flex justify-between">
+              <div>
+                <input
+                  className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  className="form-check-label inline-block text-lightblue"
+                  htmlFor="flexCheckDefault"
+                >
+                  Remember me
+                </label>
+              </div>
+              <Link to="/forgot">
+                <p className="hover:text-blue-500 hover:underline">
+                  Forgot Password?
+                </p>
+              </Link>
             </div>
             <button
               type="submit"
