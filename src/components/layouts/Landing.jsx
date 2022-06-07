@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div
       style={{ backgroundImage: `url('${landingback}')` }}
-      className="bg-[#ecf0f3] w-full h-screen px-[80px] pt-[129px] bg-cover bg-bottom pb-[45px] overflow-hidden"
+      className="bg-specwhite w-full h-screen px-[80px] pt-[129px] bg-cover bg-bottom pb-[45px] overflow-hidden"
     >
       {/* <img src={macbook} alt="" /> */}
       <div className="w-full h-full grid grid-cols-5">

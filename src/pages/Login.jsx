@@ -10,8 +10,8 @@ const Login = () => {
       <Link to="/" className="absolute mt-[30px] ml-[30px]">
         <img src={logonew} alt="" />
       </Link>
-      <div className="w-full bg-[#ecf0f3] flex justify-center items-center h-screen text-lightblue">
-        <div className="w-[500px] bg-[#ecf0f3] rounded-[20px] drop-shadow-threeDbox">
+      <div className="w-full bg-specwhite flex justify-center items-center h-screen text-lightblue">
+        <div className="w-[500px] bg-specwhite rounded-[20px] drop-shadow-threeDbox">
           <div className="w-full text-center text-[32px] mt-[20px] mb-[10px] font-bold text-darkblue">
             Sign In
           </div>
