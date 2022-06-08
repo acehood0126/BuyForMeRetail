@@ -10,7 +10,7 @@ import FAQs from "../components/layouts/Faqs";
 import Contactus from "../components/layouts/Contactus";
 import Footer from "../components/layouts/Footer";
 
-const Dashboard = () => {
+const LandingPage = () => {
   //const refs = useRef([]);
   const howitworksref = useRef(null);
   // const benefitsref = useRef();
@@ -35,4 +35,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default LandingPage;
