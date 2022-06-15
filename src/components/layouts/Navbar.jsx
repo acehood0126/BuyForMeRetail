@@ -48,7 +48,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={-30}
                   duration={1000}
-                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Benefits
                 </ScrollLink>
@@ -61,7 +61,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={-30}
                   duration={1000}
-                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   How it Works
                 </ScrollLink>
@@ -74,7 +74,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={-30}
                   duration={1000}
-                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   FAQs
                 </ScrollLink>
@@ -87,7 +87,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={-30}
                   duration={1000}
-                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Contact us
                 </ScrollLink>
@@ -95,7 +95,7 @@ const Navbar = () => {
               <li className="navlink">
                 <Link
                   to="/login"
-                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Sign In
                 </Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
               <li className="navlink">
                 <Link
                   to="/register"
-                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Sign Up
                 </Link>

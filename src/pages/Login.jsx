@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-import { FaGooglePlusG } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import logonew from "../assets/img/logo-new.svg";
 
 const Login = () => {
@@ -43,7 +43,7 @@ const Login = () => {
                 required
               />
             </div>
-            <div className="mb-2 flex justify-between">
+            <div className="mb-[20px] flex justify-between">
               <div>
                 <input
                   className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
@@ -59,27 +59,27 @@ const Login = () => {
                 </label>
               </div>
               <Link to="/forgot">
-                <p className="hover:text-blue-500 hover:underline">
+                <p className="text-[15px] hover:text-blue-500 hover:underline">
                   Forgot Password?
                 </p>
               </Link>
             </div>
             <button
               type="submit"
-              className="py-3 px-12 transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] mr-5 text-white text-lg focus:outline-none w-full text-[14px]"
+              className="py-[10px] px-12 transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] mr-5 text-white text-lg focus:outline-none w-full text-[14px]"
             >
               Next
             </button>
-            <div className="flex w-full grid-cols-3 mt-6 h-[60px]">
-              <div className="h-full bg-[#3a579d] hover:bg-[#254ba7]  rounded-l-md text-white text-lg focus:outline-none w-full flex justify-center items-center">
-                <FaFacebookF className="w-[30px] h-[30px]" />
-              </div>
-              <div className="h-full bg-[#03a9f4] hover:bg-[#0a9adb]  text-white text-lg focus:outline-none w-full flex justify-center items-center">
-                <FaTwitter className="w-[30px] h-[30px]" />
-              </div>
-              <div className="h-full bg-[#db2721] hover:bg-[#ca1913]  rounded-r-md text-white text-lg focus:outline-none w-full flex justify-center items-center">
-                <FaGooglePlusG className="w-[45px] h-[45px]" />
-              </div>
+            <div className="w-full flex justify-between mt-6 h-[60px] px-[50px]">
+              <button className="transition ease-linear h-[60px] w-[60px] bg-specwhite drop-shadow-threeDbox hover:drop-shadow-threeDboxmiddle text-[#385899] rounded-full  text-lg focus:outline-none flex justify-center items-center">
+                <FaFacebookF className="w-[20px] h-[20px]" />
+              </button>
+              <button className="transition ease-linear h-[60px] w-[60px] bg-specwhite drop-shadow-threeDbox hover:drop-shadow-threeDboxmiddle text-[#1bb1e4] rounded-full text-lg focus:outline-none flex justify-center items-center">
+                <FaTwitter className="w-[20px] h-[20px]" />
+              </button>
+              <button className="transition ease-linear h-[60px] w-[60px] bg-specwhite drop-shadow-threeDbox hover:drop-shadow-threeDboxmiddle rounded-full text-lg focus:outline-none flex justify-center items-center">
+                <FcGoogle className="w-[20px] h-[20px]" />
+              </button>
             </div>
           </form>
           <div className="w-full mb-[20px] flex justify-center">

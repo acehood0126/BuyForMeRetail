@@ -1,7 +1,7 @@
 /* eslint-disable no-sequences */
 import { Link } from "react-router-dom";
 import Accordion from "../Accordion";
-import faqsideimg from "../../assets/img/faq-side-img.svg";
+import faqsideimg from "../../assets/img/faq-image.svg";
 
 const FAQs = () => {
   const data = [
@@ -91,7 +91,7 @@ const FAQs = () => {
         </div>
         <img
           src={faqsideimg}
-          className="absolute right-[8px] bottom-[3px]"
+          className="absolute right-[8px] bottom-[3px] w-[200px]"
           alt=""
         />
       </div>
