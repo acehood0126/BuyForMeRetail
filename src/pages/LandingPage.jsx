@@ -21,7 +21,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="font-Avenir bg-specwhite">
+    <div>
       <Navbar ref={howitworksref} onhiwClick={handlescrollhiw} />
       <Landing />
       <Joinus />

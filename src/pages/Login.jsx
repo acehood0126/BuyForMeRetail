@@ -18,7 +18,7 @@ const Login = () => {
           <div className="w-full mb-[20px] flex justify-center">
             <p className="text-[16px] mr-2">Access your account's dashboard.</p>
           </div>
-          <form action="#" className="p-8 pt-0">
+          <form action="/dashboard" className="p-8 pt-0">
             <div className="mb-6">
               <label htmlFor="email" className="mb-3 block text-gray-700">
                 Email address
