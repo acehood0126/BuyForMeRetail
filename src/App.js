@@ -6,7 +6,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Forgot from "./pages/Forgot";
 import Template from "./pages/Template";
-import Dashboard from "./pages/Dashboard";
+// import Dashboard from "./pages/Dashboard";
 import Header from "./components/layouts/Header";
 import Sidebar from "./components/layouts/Sidebar";
 import SidebarItem from "./components/sidebar/SidebarItem";
@@ -34,7 +34,10 @@ function App() {
             element={<Template pageType="dashboard" />}
           />
           <Route path="/deals" element={<Template pageType="deals" />} />
-          <Route path="/shipments" element={<Template pageType="shipments" />} />
+          <Route
+            path="/shipments"
+            element={<Template pageType="shipments" />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
