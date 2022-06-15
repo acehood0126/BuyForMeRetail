@@ -1,6 +1,6 @@
 import React from "react";
-import { FaHome } from "react-icons/fa";
-import { FaQuestionCircle } from "react-icons/fa";
+// import { FaHome } from "react-icons/fa";
+// import { FaQuestionCircle } from "react-icons/fa";
 
 const SidebarItem = ({text,icon,url}) =>{
   return (

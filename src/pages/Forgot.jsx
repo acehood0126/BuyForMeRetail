@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaGooglePlusG } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
+// import { FaFacebookF } from "react-icons/fa";
+// import { FaGooglePlusG } from "react-icons/fa";
 
 const Forgot = () => {
   return (

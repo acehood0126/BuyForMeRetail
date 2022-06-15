@@ -9,7 +9,10 @@ import Compoundinput from "../Compoundinput";
 
 const Contactus = () => {
   return (
-    <div className="w-full px-[60px] py-[45px] relative flex justify-center text-lightblue bg-specwhite">
+    <div
+      id="ContactusSection"
+      className="w-full px-[60px] py-[45px] relative flex justify-center text-lightblue bg-specwhite"
+    >
       <div className="max-w-[1200px] px-[15px]">
         {/* Header */}
         <div className="w-full mb-[30px] grid grid-cols-1 justify-items-center">

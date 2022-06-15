@@ -1,13 +1,13 @@
 import ProdItem from "../Dashboard/ProdItem";
 import SortBtn from "../Dashboard/SortBtn";
-import DealsTable from "./DealsTable";
+// import DealsTable from "./DealsTable";
 import FilterBtn from "./FilterBtn";
 import FilterSelect from "./FilterSelect";
 import RoundBtn from "./RoundBtn";
 
 const Deals = (userName) => {
   var data = {
-    userName: "arata Suzuki",
+    userName: "Arata Suzuki",
   };
   var filterConditions = [
     {

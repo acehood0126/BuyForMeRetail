@@ -34,7 +34,10 @@ const FAQs = () => {
   ];
 
   return (
-    <div className="w-full px-[60px] py-[45px] relative flex justify-center text-lightblue bg-specwhite">
+    <div
+      id="FAQsSection"
+      className="w-full px-[60px] py-[45px] relative flex justify-center text-lightblue bg-specwhite"
+    >
       <div className="w-[1140px] px-[15px]">
         {/* Header */}
         <div className="w-full mb-[30px] grid grid-cols-1 justify-items-center">

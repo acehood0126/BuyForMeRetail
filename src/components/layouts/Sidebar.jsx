@@ -10,7 +10,7 @@ import {
   FaCommentAlt,
   FaUncharted,
 } from "react-icons/fa";
-import SidebarItem from "../sidebar/SidebarItem";
+// import SidebarItem from "../sidebar/SidebarItem";
 
 const Sidebar = () => {
   return (

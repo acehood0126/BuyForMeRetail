@@ -1,7 +1,5 @@
-import React, { useRef } from "react";
-
 import Navbar from "../components/layouts/Navbar";
-import Landing from "../components/layouts/Landing";
+import Banner from "../components/layouts/Banner";
 import Joinus from "../components/layouts/Joinus";
 import Profitrewards from "../components/layouts/Profitrewards";
 import Howitworks from "../components/layouts/Howitworks";
@@ -11,22 +9,13 @@ import Contactus from "../components/layouts/Contactus";
 import Footer from "../components/layouts/Footer";
 
 const LandingPage = () => {
-  //const refs = useRef([]);
-  const howitworksref = useRef(null);
-  // const benefitsref = useRef();
-  // const faqsref = useRef();
-
-  const handlescrollhiw = () => {
-    howitworksref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div>
-      <Navbar ref={howitworksref} onhiwClick={handlescrollhiw} />
-      <Landing />
+      <Navbar />
+      <Banner />
       <Joinus />
       <Profitrewards />
-      <Howitworks ref={howitworksref} onhiwClick={handlescrollhiw} />
+      <Howitworks />
       <Whatsinside />
       <FAQs />
       <Contactus />

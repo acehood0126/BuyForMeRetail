@@ -1,9 +1,10 @@
-import { forwardRef } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import logonew from "../../assets/img/logo-new.svg";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
-const Navbar = forwardRef(({ onhiwClick }, ref) => {
+const Navbar = () => {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -23,43 +24,78 @@ const Navbar = forwardRef(({ onhiwClick }, ref) => {
       <div className="w-full h-full mx-auto flex flex-wrap items-center justify-between mt-0">
         <div className="w-full h-[34px] mx-[25px] flex flex-wrap items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="">
+          <ScrollLink
+            activeClass="active"
+            to="BannerSection"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+          >
             <img src={logonew} className="h-[18px]" alt="" />
-          </Link>
+          </ScrollLink>
           {/* NavMenu */}
           <div
             className="lg:w-auto lg:overflow-hidden w-0 h-full lg:content-center lg:items-center hidden lg:block lg:mt-0 z-20 text-darkblue text-[14px]"
             id="nav-content"
           >
             <ul className="list-reset lg:flex justify-center items-center h-full">
-              <li className="navlink navlink_selected">
-                <button
-                  onClick={onhiwClick}
-                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
-                >
-                  How it Works
-                </button>
-              </li>
               <li className="navlink">
-                <Link
-                  to="/"
-                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                <ScrollLink
+                  activeClass="active"
+                  to="BenefitsSection"
+                  spy={true}
+                  smooth={true}
+                  offset={-30}
+                  duration={1000}
+                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Benefits
-                </Link>
+                </ScrollLink>
+              </li>
+              <li className="navlink navlink_selected">
+                <ScrollLink
+                  activeClass="active"
+                  to="HowItWorksSection"
+                  spy={true}
+                  smooth={true}
+                  offset={-30}
+                  duration={1000}
+                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                >
+                  How it Works
+                </ScrollLink>
               </li>
               <li className="navlink">
-                <Link
-                  to="/"
-                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                <ScrollLink
+                  activeClass="active"
+                  to="FAQsSection"
+                  spy={true}
+                  smooth={true}
+                  offset={-30}
+                  duration={1000}
+                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   FAQs
-                </Link>
+                </ScrollLink>
+              </li>
+              <li className="navlink">
+                <ScrollLink
+                  activeClass="active"
+                  to="ContactusSection"
+                  spy={true}
+                  smooth={true}
+                  offset={-30}
+                  duration={1000}
+                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                >
+                  Contact us
+                </ScrollLink>
               </li>
               <li className="navlink">
                 <Link
                   to="/login"
-                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Sign In
                 </Link>
@@ -67,7 +103,7 @@ const Navbar = forwardRef(({ onhiwClick }, ref) => {
               <li className="navlink">
                 <Link
                   to="/register"
-                  className="transition ease-linear inline-block no-underline hover:bg-lightgreen hover:text-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
+                  className="transition ease-linear inline-block no-underline hover:bg-white py-[8px] leading-[18px] px-[24px] rounded-full mr-[5px] h-[34px]"
                 >
                   Sign Up
                 </Link>
@@ -78,6 +114,6 @@ const Navbar = forwardRef(({ onhiwClick }, ref) => {
       </div>
     </nav>
   );
-});
+};
 
 export default Navbar;

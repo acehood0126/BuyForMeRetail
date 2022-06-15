@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import landingback from "../../assets/img/landingback.svg";
 import coins from "../../assets/img/coins.png";
 
-const Landing = () => {
+const Banner = () => {
   return (
     <div
+      id="BannerSection"
       style={{ backgroundImage: `url('${landingback}')` }}
       className="bg-specwhite w-full h-screen px-[80px] pt-[129px] bg-cover bg-bottom pb-[45px] overflow-hidden"
     >
@@ -44,4 +45,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Banner;

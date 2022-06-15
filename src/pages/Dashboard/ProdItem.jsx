@@ -8,7 +8,7 @@ const ProdItem = ({ title, content }) => {
 
   useEffect(() => {
     setItemHeight(refItem.current.clientHeight);
-  });
+  },[]);
 
   const [isOpened, setOpened] = useState(false);
   const [height, setHeight] = useState("0px");
