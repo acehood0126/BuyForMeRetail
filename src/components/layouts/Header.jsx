@@ -7,9 +7,9 @@ import { FaUserCircle } from "react-icons/fa";
 // /import logonew from "../../assets/img/logo-new.svg";
 
 const Header = ({ pageName, userName, linkUrl }) => {
-  const data = { currentBalance: "10.00"};
+  const data = { currentBalance: "10.00" };
   return (
-    <div className="drop-shadow-md bg-specwhite w-full h-[50px] z-10 top-0 transition ease-linear">
+    <div className="bg-white w-full h-[50px] z-10 top-0 transition ease-linear">
       <div className="w-full h-full flex items-center justify-between">
         <div className="flex items-center">
           <GoThreeBars className="mx-[10px] h-[30px] w-[30px] lg:hidden block hover:text-blue-400 text-lightblue" />

@@ -11,7 +11,7 @@ const Profitrewards = () => {
   return (
     <div
       id="BenefitsSection"
-      className="w-full px-[60px] py-[45px] flex justify-center bg-specwhite"
+      className="w-full px-[20px] py-[45px] flex justify-center bg-specwhite"
     >
       <div className="max-w-[1230px] px-[15px]">
         <div className="w-full mb-[30px]">

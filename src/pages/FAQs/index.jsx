@@ -1,9 +1,8 @@
-/* eslint-disable no-sequences */
+import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
-import Accordion from "../Accordion";
 import faqsideimg from "../../assets/img/faq-image.svg";
 
-const FAQs = () => {
+const FAQpage = () => {
   const data = [
     {
       title: "1. Is there a way I can archive shipments?",
@@ -41,20 +40,12 @@ const FAQs = () => {
       <div className="w-[1140px] px-[15px]">
         {/* Header */}
         <div className="w-full mb-[30px] grid grid-cols-1 justify-items-center">
-          <p className="uppercase text-[12px] text-lightgreen font-bold mb-[15px]">
-            learn more
-          </p>
           <h1 className="text-[34px] font-bold mb-[8px]">
             Frequently Asked Questions
           </h1>
           <p className="text-[16px] px-[128px]">
-            If your question isn’t included here, please{" "}
-            <span>
-              <Link to="/" className="text-[#2e9bff] hover:text-[#0056b3]">
-                contact us!
-              </Link>
-            </span>{" "}
-            We'd be happy to answer it.
+            If your question isn’t included here, please contact us! We'd be
+            happy to answer it.
           </p>
         </div>
         {/* Work Steps */}
@@ -83,20 +74,18 @@ const FAQs = () => {
           ))}
         </div>
         <div className="w-full grid grid-cols-1 justify-items-center mt-[30px]">
-          <Link to="/">
-            <button className="transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] text-white text-[14px] font-bold px-[12px] py-[6px] w-[185px] h-[40px]">
-              View More
-            </button>
-          </Link>
+          <button className="transition bg-orange hover:bg-lightorange ease-out hover:ease-in rounded-[6px] text-white text-[14px] font-bold px-[12px] py-[6px] w-[185px] h-[40px]">
+            View More
+          </button>
         </div>
-        <img
+        {/* <img
           src={faqsideimg}
           className="absolute right-[8px] bottom-[3px] w-[200px]"
           alt=""
-        />
+        /> */}
       </div>
     </div>
   );
 };
 
-export default FAQs;
+export default FAQpage;

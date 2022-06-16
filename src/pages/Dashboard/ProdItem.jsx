@@ -8,7 +8,7 @@ const ProdItem = ({ title, content }) => {
 
   useEffect(() => {
     setItemHeight(refItem.current.clientHeight);
-  },[]);
+  }, []);
 
   const [isOpened, setOpened] = useState(false);
   const [height, setHeight] = useState("0px");
@@ -142,9 +142,9 @@ const ProdItem = ({ title, content }) => {
                 </div>
               </div>
               <div className="submitTracking text-[14px] flex justify-center col-span-2 lg:col-span-1 items-center order-6 lg:ml-[0px] ml-[-15px] lg:mr-[0px] mr-[-55px] ">
-                <div className="text-center cursor-pointer lg:bg-specwhite bg-lightgreen lg:text-darkgreen border-[1px] border-darkgreen py-[10px] px-[5px] lg:rounded-[6px] rounded-b-[6px] text-white hover:text-white hover:bg-darkgreen lg:w-auto w-full flex justify-center ">
+                <button className="transition ease-linear text-center cursor-pointer lg:bg-specwhite bg-orange lg:text-orange lg:hover:text-white border-[1px] border-orange py-[10px] px-[5px] rounded-[6px] text-white hover:bg-lightorange hover:border-lightorange lg:w-auto w-full flex justify-center">
                   Submit Tracking
-                </div>
+                </button>
               </div>
               <div className="order-7"></div>
               <div className="order-8"></div>

@@ -3,11 +3,10 @@ const DataWithLock = ({ date, status }) => {
   var lockImg;
   if (status === "1") {
     lockImg = <FaLock className="ml-[10px] h-[12px] w-[12px]" />;
-  } else if(status === "0") {
+  } else if (status === "0") {
     lockImg = <FaLockOpen className="ml-[10px] h-[14px] w-[14px]" />;
-  }else{
-    lockImg = <div/>;
   }
+
   return (
     <div className="h-[40px] w-[60px]">
       <p className="text-[10px]">{date}</p>

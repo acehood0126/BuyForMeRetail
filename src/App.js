@@ -38,6 +38,7 @@ function App() {
             path="/shipments"
             element={<Template pageType="shipments" />}
           />
+          <Route path="/faqs" element={<Template pageType="FAQpage" />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -9,7 +9,6 @@ const SidebarItem = ({text,icon,url}) =>{
         <icon/><h2>{text}</h2>
       </div>
       <div className="">
-
       </div>
     </div>
   );

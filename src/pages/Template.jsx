@@ -4,6 +4,7 @@ import Header from "../components/layouts/Header";
 import Dashboard from "./Dashboard";
 import Deals from "./Deals";
 import Shipments from "./Shipments";
+import FAQpage from "./FAQs";
 
 const Template = ({ pageType }) => {
   var loadPage;
@@ -15,22 +16,22 @@ const Template = ({ pageType }) => {
     pageName = "Dashboard";
     linkUrl = "/dashboard";
     loadPage = <Dashboard userName={userName} />;
-  }
-
-  if (pageType === "deals") {
+  } else if (pageType === "deals") {
     pageName = "Deals";
     linkUrl = "/deals";
     loadPage = <Deals />;
-  }
-
-  if (pageType === "shipments") {
+  } else if (pageType === "shipments") {
     pageName = "Shipments";
     linkUrl = "/shipments";
     loadPage = <Shipments />;
+  } else if (pageType === "FAQpage") {
+    pageName = "FAQs";
+    linkUrl = "/faqs";
+    loadPage = <FAQpage />;
   }
 
   return (
-    <div className="w-full min-h-screen grid lg:grid-cols-[250px_auto] md:grid-cols-[90px_auto] grid-cols-[0px_auto]">
+    <div className="w-full min-h-screen grid lg:grid-cols-[200px_auto] md:grid-cols-[90px_auto] grid-cols-[0px_auto]">
       <div className="w-full h-full relative">
         <Sidebar />
       </div>

@@ -64,12 +64,13 @@ const Login = () => {
                 </p>
               </Link>
             </div>
-            <button
+            <Link
               type="submit"
-              className="py-[10px] px-12 transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] mr-5 text-white text-lg focus:outline-none w-full text-[14px]"
+              to="/dashboard"
+              className="text-center py-[10px] px-12 transition bg-lightgreen hover:bg-darkgreen ease-out hover:ease-in rounded-[6px] mr-5 text-white text-lg focus:outline-none w-full text-[14px]"
             >
               Next
-            </button>
+            </Link>
             <div className="w-full flex justify-between mt-6 h-[60px] px-[50px]">
               <button className="transition ease-linear h-[60px] w-[60px] bg-specwhite drop-shadow-threeDbox hover:drop-shadow-threeDboxmiddle text-[#385899] rounded-full  text-lg focus:outline-none flex justify-center items-center">
                 <FaFacebookF className="w-[20px] h-[20px]" />
