@@ -3,7 +3,7 @@ import watchImg from "../../assets/prodImg/AppleWatch.png";
 import { FaHeart, FaRegHeart, FaChevronDown } from "react-icons/fa";
 import LinkSite from "./LinkSite";
 const ProdItem = ({ title, content }) => {
-  const [itemHeight, setItemHeight] = useState(0);
+  const [, setItemHeight] = useState(0);
   const refItem = useRef(null);
 
   useEffect(() => {

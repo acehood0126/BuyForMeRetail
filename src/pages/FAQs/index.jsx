@@ -1,6 +1,4 @@
 import Accordion from "../../components/Accordion";
-import { Link } from "react-router-dom";
-import faqsideimg from "../../assets/img/faq-image.svg";
 
 const FAQpage = () => {
   const data = [
