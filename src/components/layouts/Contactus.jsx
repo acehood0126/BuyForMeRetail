@@ -63,12 +63,9 @@ const Contactus = () => {
         <div className="w-full grid justify-center">
           <p>
             You can email us directly at{" "}
-            <a
-              href="#"
-              className="text-blue-500 hover:text-blue-400 transition ease-linear"
-            >
+            <button className="text-blue-500 hover:text-blue-400 transition ease-linear">
               deals@buyformeretail.com
-            </a>
+            </button>
           </p>
         </div>
       </div>

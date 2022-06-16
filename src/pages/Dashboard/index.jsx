@@ -6,7 +6,7 @@ const Dashboard = (userName) => {
     userName: "Arata Suzuki",
   };
   return (
-    <div className="w-full min-h-screen bg-specwhite p-[20px] ">
+    <div className="w-full min-h-screen bg-specwhite p-[20px]">
       <div className="flex w-full items-center">
         <p>Welcome,</p>
         <p className="ml-[5px] text-[22px] text-green-500">{data.userName}</p>

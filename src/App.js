@@ -10,7 +10,6 @@ import Template from "./pages/Template";
 import Header from "./components/layouts/Header";
 import Sidebar from "./components/layouts/Sidebar";
 import SidebarItem from "./components/sidebar/SidebarItem";
-import WhatsNew from "./pages/WhatsNew";
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
           <Route path="/sidebar" element={<Sidebar />} />
 
           <Route path="/template" element={<Template />} />
-          <Route path="/whatsnew" element={<WhatsNew />} />
 
           <Route path="/menuItem" element={<SidebarItem />} />
 
