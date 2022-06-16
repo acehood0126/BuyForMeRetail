@@ -112,7 +112,7 @@ const Sidebar = () => {
         </div>
       </Link>
       <Link
-        to="/"
+        to="/contactus"
         onClick={() => {
           setCurrent(4);
         }}
@@ -133,7 +133,7 @@ const Sidebar = () => {
         </div>
       </Link>
       <Link
-        to="/"
+        to="/whatsnew"
         onClick={() => {
           setCurrent(5);
         }}

@@ -15,7 +15,7 @@ module.exports = {
         darkgreen: "#2aac8a",
         darkblue: "#122844",
         lightblue: "#3b516c",
-        specwhite: "#edf5f8",
+        specwhite: "#edf6f9",
         specwhite1: "#ecf0f3",
         skylight: "#00bbf9",
         orange: "#ff5d13",

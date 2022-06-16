@@ -38,7 +38,9 @@ function App() {
             path="/shipments"
             element={<Template pageType="shipments" />}
           />
-          <Route path="/faqs" element={<Template pageType="FAQpage" />} />
+          <Route path="/faqs" element={<Template pageType="faqs" />} />
+          <Route path="/contactus" element={<Template pageType="contactus" />} />
+          <Route path="/whatsnew" element={<Template pageType="whatsnew" />} />
         </Routes>
       </BrowserRouter>
     </div>

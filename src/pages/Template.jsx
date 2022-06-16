@@ -5,6 +5,8 @@ import Dashboard from "./Dashboard";
 import Deals from "./Deals";
 import Shipments from "./Shipments";
 import FAQpage from "./FAQs";
+import Contactuspage from "./Contactus";
+import Whatsnew from "./Whatsnew";
 
 const Template = ({ pageType }) => {
   var loadPage;
@@ -24,10 +26,18 @@ const Template = ({ pageType }) => {
     pageName = "Shipments";
     linkUrl = "/shipments";
     loadPage = <Shipments />;
-  } else if (pageType === "FAQpage") {
+  } else if (pageType === "faqs") {
     pageName = "FAQs";
     linkUrl = "/faqs";
     loadPage = <FAQpage />;
+  } else if (pageType === "contactus") {
+    pageName = "Contact Us";
+    linkUrl = "/contactus";
+    loadPage = <Contactuspage />;
+  } else if (pageType === "whatsnew") {
+    pageName = "What's new?";
+    linkUrl = "/whatsnew";
+    loadPage = <Whatsnew />;
   }
 
   return (

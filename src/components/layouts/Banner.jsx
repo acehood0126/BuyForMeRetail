@@ -21,7 +21,7 @@ const Banner = () => {
               <h1 className="w-full text-center text-darkblue">
                 A Smarter Way to Earn
               </h1>
-              <h1 className="w-full text-center text-lightgreen mb-[25px]">
+              <h1 className="w-full text-center text-orange mb-[25px]">
                 Credit Card Rewards
               </h1>
             </div>
@@ -30,7 +30,7 @@ const Banner = () => {
             </p>
             <div className="w-[290px] grid grid-cols-1 justify-items-center">
               <Link to="/register" className="mb-[17px]">
-                <button className="transition ease-linear bg-lightgreen hover:bg-darkgreen rounded-[6px] text-white px-[12px] py-[6px] w-[185px] h-[40px]">
+                <button className="transition ease-linear bg-orange hover:bg-lightorange rounded-[6px] text-white px-[12px] py-[6px] w-[185px] h-[40px]">
                   Get Started
                 </button>
               </Link>
