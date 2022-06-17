@@ -4,7 +4,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
+var retailersRouter = require("./routes/retailers");
 
 var app = express();
 
@@ -29,6 +29,6 @@ db.mongoose
   });
 
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
+app.use("/retailers", retailersRouter);
 
 module.exports = app;

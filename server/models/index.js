@@ -6,6 +6,6 @@ mongoose.Promise = global.Promise;
 const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
-db.discorduser = require("./discorduser.model.js")(mongoose);
+db.retailer = require("./retailer.model.js")(mongoose);
 
 module.exports = db;

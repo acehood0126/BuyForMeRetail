@@ -1,10 +1,9 @@
 module.exports = (mongoose) => {
   var schema = mongoose.Schema(
     {
-      discordid: String,
-      discordname: String,
-      walletadddress: String,
-      groupid: String,
+      email: String,
+      name: String,
+      password: String,
     },
     { timestamps: true }
   );
@@ -15,6 +14,6 @@ module.exports = (mongoose) => {
     return object;
   });
 
-  const Discorduser = mongoose.model("discorduser", schema);
-  return Discorduser;
+  const retailer = mongoose.model("retailer", schema);
+  return retailer;
 };

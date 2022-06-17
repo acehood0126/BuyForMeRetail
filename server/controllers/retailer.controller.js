@@ -1,30 +1,30 @@
 const db = require("../models");
-const Discorduser = db.discorduser;
+const retailer = db.retailer;
 
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
   // Validate request
-  if (!req.body.discordid) {
+  if (!req.body.retailer) {
     res.status(400).send({ message: "Content can not be empty!" });
     return;
   }
 
   // Create a Tutorial
-  const discorduser = new Discorduser({
-    discordid: req.body.discordid,
-    discordname: req.body.discordname,
-    walletadddress: req.body.wadres,
-    groupid: req.body.groupid,
+  const newretailer = new retailer({
+    email: req.body.email,
+    name: req.body.name,
+    password: req.body.password,
   });
 
   // Save Tutorial in the database
-  Discorduser.find({
-    discordid: req.body.discordid,
-  })
+  retailer
+    .find({
+      email: req.body.email,
+    })
     .then((data) => {
       if (!data.length) {
-        discorduser
-          .save(discorduser)
+        newretailer
+          .save(newretailer)
           .then((data) => {
             res.send({ message: "Success" });
           })
@@ -32,7 +32,7 @@ exports.create = (req, res) => {
             res.status(500).send({
               message:
                 err.message ||
-                "Some error occurred while creating the DiscordUser.",
+                "Some error occurred while creating the retailer.",
             });
           });
       } else {
@@ -40,6 +40,6 @@ exports.create = (req, res) => {
       }
     })
     .catch((err) => {
-      res.status(500).send({ message: "Error retrieving DiscordUser" });
+      res.status(500).send({ message: "Error retrieving retailer" });
     });
 };
