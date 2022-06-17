@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logonew from "../../assets/img/logo-new.svg";
 import favIcon from "../../assets/img/favicon.svg";
+import { useState } from "react";
 // import {
 //   FaHome,
 //   FaRegClipboard,
@@ -10,7 +11,6 @@ import favIcon from "../../assets/img/favicon.svg";
 //   FaCommentAlt,
 //   FaUncharted,
 // } from "react-icons/fa";
-import { useState } from "react";
 // import SidebarItem from "../sidebar/SidebarItem";
 
 const Sidebar = () => {
@@ -34,7 +34,7 @@ const Sidebar = () => {
         }}
       >
         <div
-          className={`transition ease-linear lg:w-full w-0 h-[40px] my-[10px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
+          className={`transition ease-linear lg:w-full w-0 h-[30px] my-[15px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
             current === 0
               ? "border-orange"
               : "border-[#06163a] hover:border-lightorange"
@@ -55,7 +55,7 @@ const Sidebar = () => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M5.99878 17.6673V9.33398H10.9988V17.6673"
                 stroke="#ffffff"
@@ -77,7 +77,7 @@ const Sidebar = () => {
         }}
       >
         <div
-          className={`transition ease-linear lg:w-full w-0 h-[40px] my-[10px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
+          className={`transition ease-linear lg:w-full w-0 h-[30px] my-[15px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
             current === 1
               ? "border-orange"
               : "border-[#06163a] hover:border-lightorange"
@@ -112,7 +112,7 @@ const Sidebar = () => {
         }}
       >
         <div
-          className={`transition ease-linear lg:w-full w-0 h-[40px] my-[10px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
+          className={`transition ease-linear lg:w-full w-0 h-[30px] my-[15px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
             current === 2
               ? "border-orange"
               : "border-[#06163a] hover:border-lightorange"
@@ -133,21 +133,21 @@ const Sidebar = () => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M17.5 13.3329V6.66626C17.4997 6.37399 17.4225 6.08693 17.2763 5.83389C17.13 5.58086 16.9198 5.37073 16.6667 5.22459L10.8333 1.89126C10.58 1.74498 10.2926 1.66797 10 1.66797C9.70744 1.66797 9.42003 1.74498 9.16667 1.89126L3.33333 5.22459C3.08022 5.37073 2.86998 5.58086 2.72372 5.83389C2.57745 6.08693 2.5003 6.37399 2.5 6.66626V13.3329C2.5003 13.6252 2.57745 13.9122 2.72372 14.1653C2.86998 14.4183 3.08022 14.6285 3.33333 14.7746L9.16667 18.1079C9.42003 18.2542 9.70744 18.3312 10 18.3312C10.2926 18.3312 10.58 18.2542 10.8333 18.1079L16.6667 14.7746C16.9198 14.6285 17.13 14.4183 17.2763 14.1653C17.4225 13.9122 17.4997 13.6252 17.5 13.3329Z"
                 stroke="#ffffff"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M2.72501 5.80078L10 10.0091L17.275 5.80078"
                 stroke="#6E84A3"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M10 18.4V10"
                 stroke="#6E84A3"
@@ -169,7 +169,7 @@ const Sidebar = () => {
         }}
       >
         <div
-          className={`transition ease-linear lg:w-full w-0 h-[40px] my-[10px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
+          className={`transition ease-linear lg:w-full w-0 h-[30px] my-[15px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
             current === 3
               ? "border-orange"
               : "border-[#06163a] hover:border-lightorange"
@@ -190,7 +190,7 @@ const Sidebar = () => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M10.9007 1H5.50074C5.00368 1 4.60074 1.40294 4.60074 1.9V3.7C4.60074 4.19706 5.00368 4.6 5.50074 4.6H10.9007C11.3978 4.6 11.8007 4.19706 11.8007 3.7V1.9C11.8007 1.40294 11.3978 1 10.9007 1Z"
                 stroke="#ffffff"
@@ -212,7 +212,7 @@ const Sidebar = () => {
         }}
       >
         <div
-          className={`transition ease-linear lg:w-full w-0 h-[40px] my-[10px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
+          className={`transition ease-linear lg:w-full w-0 h-[30px] my-[15px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
             current === 4
               ? "border-orange"
               : "border-[#06163a] hover:border-lightorange"
@@ -250,13 +250,14 @@ const Sidebar = () => {
         }}
       >
         <div
-          className={`transition ease-linear lg:w-full w-0 h-[40px] my-[10px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
+          className={`transition ease-linear lg:w-full w-0 h-[30px] my-[15px] grid grid-cols-[50px_auto] items-center border-l-[2px] text-white ${
             current === 5
               ? "border-orange"
               : "border-[#06163a] hover:border-lightorange"
           }`}
         >
-          <div className="pl-[20px] py-[8px] ">
+          <div className="pl-[20px] py-[8px] relative">
+            <div className="absolute ml-[12px] w-[10px] h-[10px] rounded-full bg-red-600 border-2 border-[#06163a]"></div>
             <svg
               width="15"
               height="15"
@@ -271,35 +272,35 @@ const Sidebar = () => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M6.5625 3.68359L10.5 5.95859L14.4375 3.68359"
                 stroke="#ffffff"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M6.5625 17.3163V12.775L2.625 10.5"
                 stroke="#ffffff"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M18.375 10.5L14.4375 12.775V17.3163"
                 stroke="#ffffff"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M2.86133 6.08984L10.5001 10.5086L18.1388 6.08984"
                 stroke="#ffffff"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>{" "}
+              ></path>
               <path
                 d="M10.5 19.32V10.5"
                 stroke="#ffffff"
@@ -309,7 +310,7 @@ const Sidebar = () => {
               ></path>
             </svg>
           </div>
-          <div className="md:hidden lg:block">
+          <div className="md:hidden lg:block flex items-center">
             <p className="h-full flex items-center ">What's New</p>
           </div>
         </div>

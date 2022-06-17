@@ -21,14 +21,14 @@ const Header = ({ pageName, userName, linkUrl }) => {
           </Link>
         </div>
         <div className="flex items-center h-full justify-end ">
-          <div className="flex w-[150px] p-[5px] rounded-full bg-gray-200">
-            <BsCoin className="pl-[10px] w-[30px] h-[30px] font-bold text-yellow-400" />
+          <div className="flex w-[150px] p-[5px] rounded-full border-[2px] border-gray-200">
+            <BsCoin className="w-[30px] h-[30px] font-bold text-yellow-400" />
             <div className="ml-[10px]">
               <h1 className="font-bold text-[12px] text-lightblue ">
-                Lifetime Payment
+                Lifetime Payout
               </h1>
               <p className="text-lightgreen font-bold text-[14px] leading-[14px]">
-                $.{data.currentBalance}
+                ${data.currentBalance}
               </p>
             </div>
           </div>
