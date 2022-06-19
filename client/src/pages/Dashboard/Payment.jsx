@@ -1,19 +1,18 @@
 import BtnRefresh from "./BtnRefresh";
 import DataWithLock from "./DataWithLock";
 
-const Tracking = () => {
+const Payment = () => {
   return (
     <div className="text-gray-500 h-[170px]">
-
-      <BtnRefresh title="Your Tracking" linkUrl="/" />
+      <BtnRefresh title="Your Payments" linkUrl="/" />
       <div className="mt-[10px] rounded-lg h-[120px] bg-white p-[20px]">
         <div className="grid grid-cols-[auto_auto_120px]">
           <div>
-            <DataWithLock date="RECEIVED TODAY" status="2" />
-            {/* <DataWithLock date="WED 06/10" status="0" /> */}
+            <DataWithLock date="WED 06/08" status="1" />
+            <DataWithLock date="WED 06/10" status="0" />
           </div>
           <div>
-            <DataWithLock date="PENDING TODAY" status="2" />
+            <DataWithLock date="Today 06/09" status="1" />
           </div>
           <div className="text-[12px]">
             <select className="w-[120px] rounded-lg h-[30px] pt-[2px]  text-[12px] border-gray-200">
@@ -23,9 +22,7 @@ const Tracking = () => {
               <option value="meat">THIS YEAR</option>
               <option value="meat">CUSTOM</option>
             </select>
-            <p className="mt-[5px] text-[18px] leading-[18px] flex">
-              --
-            </p>
+            <p className="mt-[5px] text-[18px] leading-[18px] flex">--</p>
           </div>
         </div>
       </div>
@@ -33,4 +30,4 @@ const Tracking = () => {
   );
 };
 
-export default Tracking;
+export default Payment;

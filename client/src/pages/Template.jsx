@@ -7,7 +7,7 @@ import Shipments from "./Shipments";
 import FAQpage from "./FAQs";
 import Contactuspage from "./Contactus";
 import Whatsnew from "./Whatsnew";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Template = ({ pageType }) => {
   var loadPage;
@@ -15,7 +15,7 @@ const Template = ({ pageType }) => {
   var linkUrl;
   var userName = "Arata Suzuki";
   var currentTab = 0;
-  // const [aaa, setcurrentTab] = useState(0);
+  // const [currentTab, setcurrentTab] = useState(0);
 
   // useEffect(()=>{
   if (pageType === "dashboard") {
