@@ -1,54 +1,20 @@
 {
-  "name": "buyformeretail",
-  "version": "0.1.0",
+  "name": "server",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@material-tailwind/react": "^1.0.3",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "flowbite": "^1.4.7",
-    "flowbite-react": "^0.0.25",
-    "multiselect-react-dropdown": "^2.0.22",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.4.0",
-    "react-multi-select-component": "^4.2.9",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "react-scroll": "^1.8.7",
-    "react-select": "^5.3.2",
-    "react-table": "^7.8.0",
-    "react-widgets": "^5.8.4",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "nodemon ./bin/www"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.3.8",
+    "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.0.24"
+    "nodemon": "^2.0.16"
   }
 }
