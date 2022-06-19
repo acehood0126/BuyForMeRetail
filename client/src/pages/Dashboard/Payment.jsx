@@ -22,9 +22,7 @@ const Payment = () => {
               <option value="meat">THIS YEAR</option>
               <option value="meat">CUSTOM</option>
             </select>
-            <p className="mt-[5px] text-[18px] leading-[18px] flex">
-            --
-            </p>
+            <p className="mt-[5px] text-[18px] leading-[18px] flex">--</p>
           </div>
         </div>
       </div>

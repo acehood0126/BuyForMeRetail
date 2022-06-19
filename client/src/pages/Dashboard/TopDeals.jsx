@@ -25,10 +25,10 @@ const TopDeals = () => {
                     <SortBtn className="ml-[50px] " title="ITEM" state="0" />
                   </div>
                   <div className="flex justify-center">
-                    <SortBtn className="" title="WHAT WE PAY"  state="1"/>
+                    <SortBtn className="" title="WHAT WE PAY" state="1" />
                   </div>
-                  <div className="flex justify-center" >
-                    <SortBtn title="RETAILERS" state="2"/>
+                  <div className="flex justify-center">
+                    <SortBtn title="RETAILERS" state="2" />
                   </div>
                   <div className="flex justify-center">
                     <SortBtn title="RETAIL TYPE" />

@@ -1,7 +1,7 @@
 const Shipments = () => {
   return (
-    <div className="">
-      <div>asdfasdfadfasdffd</div>
+    <div className="w-full min-h-screen bg-specwhite p-[20px]">
+      <div>Shipments</div>
     </div>
   );
 };

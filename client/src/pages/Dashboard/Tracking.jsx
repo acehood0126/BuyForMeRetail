@@ -4,7 +4,6 @@ import DataWithLock from "./DataWithLock";
 const Tracking = () => {
   return (
     <div className="text-gray-500 h-[170px]">
-
       <BtnRefresh title="Your Tracking" linkUrl="/" />
       <div className="mt-[10px] rounded-lg h-[120px] bg-white p-[20px]">
         <div className="grid grid-cols-[auto_auto_120px]">
@@ -23,9 +22,7 @@ const Tracking = () => {
               <option value="meat">THIS YEAR</option>
               <option value="meat">CUSTOM</option>
             </select>
-            <p className="mt-[5px] text-[18px] leading-[18px] flex">
-              --
-            </p>
+            <p className="mt-[5px] text-[18px] leading-[18px] flex">--</p>
           </div>
         </div>
       </div>
