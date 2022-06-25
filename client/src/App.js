@@ -1,47 +1,41 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect } from 'react'; 
+// import { AuthProvider } from "./contexts/JWTContext";
+
 import "./App.css";
 
-import LandingPage from "./pages/LandingPage";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Forgot from "./pages/Forgot";
-import Template from "./pages/Template";
-// import Dashboard from "./pages/Dashboard";
-import Header from "./components/layouts/Header";
-import Sidebar from "./components/layouts/Sidebar";
-import SidebarItem from "./components/sidebar/SidebarItem";
+// Redux
+import { Provider } from 'react-redux';
+// import store from './store';
+// import { loadUser } from './actions/auth';
+// import setAuthToken from './utils/setAuthToken.js';
+import AllRoutes from './routes';
+
+import {store} from "./redux/store";
+
 
 function App() {
+
+  // useEffect(() => {
+  //   // check for token in LS when app first runs
+  //   if (localStorage.token) {
+  //     // if there is a token set axios headers for all requests
+  //     setAuthToken(localStorage.token);
+  //   }
+  //   // try to fetch a user, if no token or invalid token we
+  //   // will get a 401 response from our API
+  //   store.dispatch(loadUser());
+
+  //   // log user out from all tabs if they log out in one tab
+  //   window.addEventListener('storage', () => {
+  //     if (!localStorage.token) store.dispatch({ type: LOGOUT });
+  //   });
+  // }, []);
   return (
-    <div className="font-Avenir bg-specwhite">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/forgot" element={<Forgot />} />
-          <Route path="/header" element={<Header />} />
-          <Route path="/sidebar" element={<Sidebar />} />
-
-          <Route path="/template" element={<Template />} />
-
-          <Route path="/menuItem" element={<SidebarItem />} />
-
-          <Route
-            path="/dashboard"
-            element={<Template pageType="dashboard" />}
-          />
-          <Route path="/deals" element={<Template pageType="deals" />} />
-          <Route
-            path="/shipments"
-            element={<Template pageType="shipments" />}
-          />
-          <Route path="/faqs" element={<Template pageType="faqs" />} />
-          <Route path="/contactus" element={<Template pageType="contactus" />} />
-          <Route path="/whatsnew" element={<Template pageType="whatsnew" />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    // <Provider>
+      <AllRoutes/>      
+    // </Provider>
+    
+    
   );
 }
 
