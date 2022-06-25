@@ -1,0 +1,5 @@
+{
+  "mongoURI": "mongodb://localhost:27017/buyformeretail",
+  "jwtSecret": "secret",
+  "githubToken": "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"
+}

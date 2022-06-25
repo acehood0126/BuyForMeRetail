@@ -78,8 +78,8 @@ const Register = () => {
             <p className="text-[16px] text-[#2aac8a]">BuyForRetail.</p>
           </div>
 
-          <form onSubmit={onSubmit} className="p-8 pt-0 ">
-            <div className=" grid grid-cols-1 lg:grid-cols-2 gap-x-[70px]">
+          <form onSubmit={onSubmit} className="p-8 pt-0">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[70px]">
               <div className="mb-6">
                 <label htmlFor="displayName" className="mb-3 block">
                   Display Name *

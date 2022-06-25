@@ -3,8 +3,10 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
-var indexRouter = require("./routes/index");
+var indexRouter = require("./routes/api/index");
 var retailersRouter = require("./routes/retailers");
+var userRouter = require("./routes/api/users");
+var auth = require("./routes/api/auth");
 
 var app = express();
 
@@ -28,14 +30,10 @@ db.mongoose
     process.exit();
   });
 
-// app.use("/", indexRouter);
-app.use("/", (req, res) => {
-  res.json({ message: "Welcome to you" });
-});
-app.use("/retailers", retailersRouter);
-// app.use('/api/users', require('./routes/api/users'));
-app.use("/api/users", (req, res) => {
-  res.json({ message: "users" });
-});
+app.use("/api", indexRouter);
+app.use("/api/retailers", retailersRouter);
+app.use("/api/users", userRouter);
+app.use("/api/auth", auth);
+// app.use("/api/auth/sign-in", auth);
 
 module.exports = app;

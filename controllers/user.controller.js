@@ -6,11 +6,12 @@ const { check, validationResult } = require("express-validator");
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
   // Validate request
+  console.log(req.body);
 
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
-  }
+  // const errors = validationResult(req);
+  // if (!errors.isEmpty()) {
+  //   return res.status(400).json({ errors: errors.array() });
+  // }
 
   //Check Email
      const {
@@ -40,18 +41,20 @@ exports.create = (req, res) => {
     city: city,
     county: county,
     state: state,
-    zipCode: zipCode    
+    zipCode: zipCode,
   });
 
   // Save Tutorial in the database
+
   user
     .find({
       email: email,
     })
     .then((data) => {
+      console.log("email");
       if (!data.length) {
-        user
-          .save(newUser)
+        newUser
+          .save()
           .then((data) => {
             res.send({ message: "Success" });
           })

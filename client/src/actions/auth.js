@@ -36,12 +36,11 @@ export const loadUser = () => async (dispatch) => {
 
 // Register User
 export const register = async (formData) =>{
-  console.log("register");
-
+  // console.log("register");
   // const res = await api.get('/users', formData);
-  const res = axios.get('/users');
+  const res = await api.post('/users',formData);
 
-  // console.log(res.data);
+  console.log(res.data);
     
     
   
