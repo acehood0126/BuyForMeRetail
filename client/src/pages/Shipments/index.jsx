@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import { Tabs } from "flowbite-react";
 import AllShipments from "./AllShipments";
 
