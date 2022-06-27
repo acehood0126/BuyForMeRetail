@@ -17,7 +17,11 @@ import Header from "./components/layouts/Header";
 import Sidebar from "./components/layouts/Sidebar";
 import SidebarItem from "./components/sidebar/SidebarItem";
 
-import {AuthProvider} from "./contexts/JWTContext"
+import { AuthProvider } from "./contexts/JWTContext";
+
+//Admin
+import AdminLayout from "./components/layouts/Main/Admin";
+import AdminDashboard from "./pages/Admin/Dashboard";
 
 const AllRoutes = () => {
   return (
@@ -26,15 +30,19 @@ const AllRoutes = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<AuthProvider><Login /></AuthProvider>} />
+          <Route
+            path="/login"
+            element={
+              <AuthProvider>
+                <Login />
+              </AuthProvider>
+            }
+          />
           <Route path="/forgot" element={<Forgot />} />
           <Route path="/header" element={<Header />} />
           <Route path="/sidebar" element={<Sidebar />} />
-
           <Route path="/template" element={<Template />} />
-
           <Route path="/menuItem" element={<SidebarItem />} />
-
           <Route
             path="/dashboard"
             element={<Template pageType="dashboard" />}
@@ -50,6 +58,10 @@ const AllRoutes = () => {
             element={<Template pageType="contactus" />}
           />
           <Route path="/whatsnew" element={<Template pageType="whatsnew" />} />
+
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

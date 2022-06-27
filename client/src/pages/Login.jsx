@@ -38,10 +38,6 @@ const Login = () => {
     notify();
   };
 
-  if (isAuthenticated) {
-    return <Navigate to="/dashboard" />;
-  }
-
   const notify = () => {
     toast('Default!', { position: toast.POSITION.TOP_LEFT })
     toast.success('Success!', {
@@ -57,6 +53,10 @@ const Login = () => {
     })
     toast.error('Error!', { position: toast.POSITION.BOTTOM_CENTER })
     toast('Wow so easy !', { position: toast.POSITION.BOTTOM_RIGHT })
+  }
+
+  if (isAuthenticated) {
+    return <Navigate to="/dashboard" />;
   }
 
   return (
