@@ -1,4 +1,5 @@
 import { createContext, useEffect, useReducer } from "react";
+// import axios from "axios";
 
 import axios from "../utils/axios";
 import { isValidToken, setSession } from "../utils/jwt";
@@ -8,12 +9,13 @@ const SIGN_IN = "SIGN_IN";
 const SIGN_OUT = "SIGN_OUT";
 const SIGN_UP = "SIGN_UP";
 const SET_ERROR = "SET_ERROR"
+const REMOVE_ERROR = "REMOVE_ERROR"
 
 const initialState = {
   isAuthenticated: false,
   isInitialized: false,
   user: null,
-  errMsg: null
+  errMsg: "none"
 };
 
 const JWTReducer = (state, action) => {
@@ -23,6 +25,7 @@ const JWTReducer = (state, action) => {
         isAuthenticated: action.payload.isAuthenticated,
         isInitialized: true,
         user: action.payload.user,
+        errMsg: "none"
       };
     case SIGN_IN:
       return {
@@ -49,6 +52,12 @@ const JWTReducer = (state, action) => {
         errMsg: action.payload.errMsg
       };
 
+      case REMOVE_ERROR :
+        return {
+          ...state,
+          errMsg: action.payload.errMsg
+        }
+
     default:
       return state;
   }
@@ -58,7 +67,6 @@ const AuthContext = createContext(null);
 
 function AuthProvider({ children }) {
   const [state, dispatch] = useReducer(JWTReducer, initialState);
-
   useEffect(() => {
     const initialize = async () => {
       try {
@@ -70,7 +78,6 @@ function AuthProvider({ children }) {
           const response = await axios.get("/api/auth/my-account");
           const { user } = response.data;
 
-          console.log(user);
 
           dispatch({
             type: INITIALIZE,
@@ -110,7 +117,8 @@ function AuthProvider({ children }) {
         password,
       });
       const { accessToken, user } = response.data;
-  
+      console.log("user");
+      console.log(user);
       setSession(accessToken);
       dispatch({
         type: SIGN_IN,
@@ -119,6 +127,7 @@ function AuthProvider({ children }) {
         },
       });
     } catch (err) {
+      
       dispatch({
         type: SET_ERROR,
         payload: {
@@ -153,6 +162,15 @@ function AuthProvider({ children }) {
 
   const resetPassword = (email) => console.log(email);
 
+  const removeErrorMsg = () => {
+    dispatch({
+      type: REMOVE_ERROR,
+      payload: {
+        errMsg: "none",
+      },
+    });
+  }
+
   return (
     <AuthContext.Provider
       value={{
@@ -162,6 +180,7 @@ function AuthProvider({ children }) {
         signOut,
         signUp,
         resetPassword,
+        removeErrorMsg,
       }}
     >
       {children}

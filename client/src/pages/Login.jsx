@@ -1,8 +1,5 @@
-import React, { useState }from 'react';
+import React, { useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
-// import { connect } from 'react-redux';
-// import PropTypes from 'prop-types';
-// import { login } from '../../actions/auth';
 
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -12,18 +9,17 @@ import logonew from "../assets/img/logo-new.svg";
 import useAuth from "../hooks/useAuth";
 
 //toast
-import {ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-// toast.configure()
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useEffect } from "react";
 
 const Login = () => {
-
   // const navigate = useNavigate();
-  const { signIn, isAuthenticated, errMsg } = useAuth();
-  
+  const { user, signIn, isAuthenticated, errMsg, removeErrorMsg } = useAuth();
+
   const [formData, setFormData] = useState({
-    email: '',
-    password: ''
+    email: "",
+    password: "",
   });
 
   const { email, password } = formData;
@@ -34,26 +30,22 @@ const Login = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     signIn(email, password);
-    console.log("submit");
-    notify();
   };
 
-  const notify = () => {
-    toast('Default!', { position: toast.POSITION.TOP_LEFT })
-    toast.success('Success!', {
-      position: toast.POSITION.TOP_CENTER,
-      autoClose: 8000
-    })
-    toast.info('Info!', {
-      position: toast.POSITION.TOP_RIGHT,
-      autoClose: false
-    })
-    toast.warn({
-      position: toast.POSITION.BOTTOM_LEFT
-    })
-    toast.error('Error!', { position: toast.POSITION.BOTTOM_CENTER })
-    toast('Wow so easy !', { position: toast.POSITION.BOTTOM_RIGHT })
-  }
+  useEffect(() => {
+    if (errMsg !== "none") {
+      if (errMsg) {
+        toast.error(errMsg, {
+          position: toast.POSITION.TOP_RIGHT,
+          autoClose: 2000,
+          hideProgressBar: true,
+        });
+        console.log(user);
+      } else {
+      }
+      removeErrorMsg();
+    }
+  }, [errMsg]);
 
   if (isAuthenticated) {
     return <Navigate to="/dashboard" />;
@@ -61,7 +53,7 @@ const Login = () => {
 
   return (
     <div className="relative w-full h-full">
-      <ToastContainer/>
+      <ToastContainer className="text-[12px]" />
       <Link to="/" className="absolute mt-[30px] ml-[30px]">
         <img src={logonew} alt="" />
       </Link>
@@ -73,8 +65,8 @@ const Login = () => {
           <div className="w-full mb-[20px] flex justify-center">
             <p className="text-[16px] mr-2">Access your account's dashboard.</p>
           </div>
-          {errMsg && <p className="text-[16px] mr-2">{errMsg}</p>}
-          <form onSubmit={onSubmit}  className="p-8 pt-0" >
+
+          <form onSubmit={onSubmit} className="p-8 pt-0">
             <div className="mb-6">
               <label htmlFor="email" className="mb-3 block text-gray-700">
                 Email address
@@ -82,7 +74,7 @@ const Login = () => {
               <input
                 type="email"
                 id="email"
-                name = "email"
+                name="email"
                 value={email}
                 onChange={onChange}
                 className="bg-white rounded-md border border-gray-200 p-3 focus:outline-none w-full"

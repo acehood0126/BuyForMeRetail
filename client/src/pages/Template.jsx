@@ -7,17 +7,23 @@ import Shipments from "./Shipments";
 import FAQpage from "./FAQs";
 import Contactuspage from "./Contactus";
 import Whatsnew from "./Whatsnew";
+import useAuth from "../hooks/useAuth";
+import { Outlet } from "react-router-dom";
 // import { useState } from "react";
 
-const Template = ({ pageType }) => {
+const Template = ({ children }) => {
   var loadPage;
   var pageName;
   var linkUrl;
   var userName = "Arata Suzuki";
   var currentTab = 0;
   // const [currentTab, setcurrentTab] = useState(0);
+  const { signIn, isAuthenticated, errMsg, removeErrorMsg } = useAuth();
 
+  console.log("isAuthenticated");
+  console.log(isAuthenticated);
   // useEffect(()=>{
+    var pageType = "dashboard";
   if (pageType === "dashboard") {
     // setcurrentTab(0);
     currentTab = 0;
@@ -69,7 +75,8 @@ const Template = ({ pageType }) => {
           userName={userName}
           linkUrl={linkUrl}
         />
-        {loadPage}
+        {children}
+        <Outlet/>
       </div>
     </div>
   );

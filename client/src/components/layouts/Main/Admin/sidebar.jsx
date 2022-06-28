@@ -2,7 +2,7 @@ import { MdOutlineDashboard, MdOutlineBusinessCenter } from "react-icons/md";
 import { FiBox, FiUsers } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import { IoFootstepsOutline } from "react-icons/io5";
-import logo from "../../../";
+import logo from "../../../../assets/img/favicon.svg";
 
 // import logo from "../../../Assets/Images/logo.png";
 

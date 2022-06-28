@@ -12,7 +12,7 @@ import Forgot from "./pages/Forgot";
 import LandingPage from "./pages/LandingPage";
 
 import Template from "./pages/Template";
-// import Dashboard from "./pages/Dashboard";
+
 import Header from "./components/layouts/Header";
 import Sidebar from "./components/layouts/Sidebar";
 import SidebarItem from "./components/sidebar/SidebarItem";
@@ -23,48 +23,84 @@ import { AuthProvider } from "./contexts/JWTContext";
 import AdminLayout from "./components/layouts/Main/Admin";
 import AdminDashboard from "./pages/Admin/Dashboard";
 
-const AllRoutes = () => {
-  return (
-    <div className="font-Avenir bg-specwhite">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/register" element={<Register />} />
-          <Route
-            path="/login"
-            element={
-              <AuthProvider>
-                <Login />
-              </AuthProvider>
-            }
-          />
-          <Route path="/forgot" element={<Forgot />} />
-          <Route path="/header" element={<Header />} />
-          <Route path="/sidebar" element={<Sidebar />} />
-          <Route path="/template" element={<Template />} />
-          <Route path="/menuItem" element={<SidebarItem />} />
-          <Route
-            path="/dashboard"
-            element={<Template pageType="dashboard" />}
-          />
-          <Route path="/deals" element={<Template pageType="deals" />} />
-          <Route
-            path="/shipments"
-            element={<Template pageType="shipments" />}
-          />
-          <Route path="/faqs" element={<Template pageType="faqs" />} />
-          <Route
-            path="/contactus"
-            element={<Template pageType="contactus" />}
-          />
-          <Route path="/whatsnew" element={<Template pageType="whatsnew" />} />
+import AuthLayout from "./layouts/Auth";
+import Dashboard from "./pages/Dashboard";
 
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-};
+const AllRoutes = [
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "register",
+    element: <Register />,
+  },
+  {
+    path: "/",
+    element: <Template />,
+    children: [
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+    ],
+  },
+  {
+    path: "admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        path: "dashboard",
+        element: <AdminDashboard />,
+      },
+    ],
+  },
+
+  // {
+  //   path: "404",
+  //   element: <Page404 />,
+  // },
+  // {
+  //   path: "500",
+  //   element: <Page500 />,
+  // },
+];
+// const oldAllRoutes = () => {
+//   return (
+//     <div className="font-Avenir bg-specwhite">
+//       <BrowserRouter>
+//         <Routes>
+//           <Route path="/forgot" element={<Forgot />} />
+//           <Route path="/header" element={<Header />} />
+//           <Route path="/sidebar" element={<Sidebar />} />
+
+//           <Route path="/template" element={<Template />} />
+
+//           <Route path="/menuItem" element={<SidebarItem />} />
+
+//           <Route
+//             path="/dashboard"
+//             element={<Template pageType="dashboard" />}
+//           />
+//           <Route path="/deals" element={<Template pageType="deals" />} />
+//           <Route
+//             path="/shipments"
+//             element={<Template pageType="shipments" />}
+//           />
+//           <Route path="/faqs" element={<Template pageType="faqs" />} />
+//           <Route
+//             path="/contactus"
+//             element={<Template pageType="contactus" />}
+//           />
+//           <Route path="/whatsnew" element={<Template pageType="whatsnew" />} />
+//         </Routes>
+//       </BrowserRouter>
+//     </div>
+//   );
+// };
+
 export default AllRoutes;
