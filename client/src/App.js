@@ -1,23 +1,13 @@
 import React from "react";
-import { BrowserRouter, useRoutes } from "react-router-dom";
-import { Provider } from "react-redux";
+import { useRoutes } from "react-router-dom";
 import "./App.css";
 import AllRoutes from "./routes";
 import { AuthProvider } from "./contexts/JWTContext";
 
 function App() {
-  const MyRoutes = () => {
-    let routes = useRoutes(AllRoutes);
-    return routes;
-  };
-  
-  return (
-    <BrowserRouter>
-      <AuthProvider>
-        <MyRoutes />
-      </AuthProvider>
-    </BrowserRouter>
-  );
+  let routes = useRoutes(AllRoutes);
+
+  return <AuthProvider>{routes}</AuthProvider>;
 }
 
 export default App;
