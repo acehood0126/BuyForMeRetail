@@ -1,7 +1,7 @@
 import Payment from "./Payment";
 import Tracking from "./Tracking";
 import TopDeals from "./TopDeals";
-const Dashboard = (userName) => {
+const Dashboard = () => {
   var data = {
     userName: "Arata Suzuki",
   };

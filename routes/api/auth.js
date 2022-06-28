@@ -89,27 +89,28 @@ router.post(
 
     try {
       let user = await User.findOne({email});
-      
+
       if (!user) {
         return res
           .status(400)
-          .json({ errors: [{ msg: 'Invalid Credentials' }] });
+          .json({ errors: [{ msg: 'This email account does not exist.' }] });
       }
 
       // const isMatch = await bcrypt.compare(password, user.password);
       const isMatch = password === user.password;
-      console.log(isMatch);
+      console.log(user.password);
+      
       if (!isMatch) {
         return res
           .status(400)
-          .json({ errors: [{ msg: 'Invalid Credentials' }] });
+          .json({ errors: [{ msg: 'The password is not correct' }] });
       }
 
+      console.log("success");
+      console.log(user);
       const payload = {
-        user: {
-          id: user.id
-        }
-      };
+        user: user
+        };
 
       jwt.sign(
         payload,
