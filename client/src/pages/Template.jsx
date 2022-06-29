@@ -64,7 +64,7 @@ const Template = ({ children }) => {
   // },[]);
 
   return (
-    <div className="w-full min-h-screen grid lg:grid-cols-[200px_auto] md:grid-cols-[60px_auto] grid-cols-[0px_auto]">
+    <div className="w-full min-h-screen grid lg:grid-cols-[200px_auto] font-Avenir md:grid-cols-[60px_auto] grid-cols-[0px_auto]">
       <div className="w-full h-full relative">
         <Sidebar current={currentTab} />
       </div>

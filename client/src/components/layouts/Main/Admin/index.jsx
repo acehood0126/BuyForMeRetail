@@ -4,7 +4,7 @@ import AdminHeader from "../../Header/Admin";
 
 const AdminLayout = () => {
   return (
-    <div className="w-full h-screen grid lg:grid-cols-[230px_auto] grid-cols-[50px_auto] bg-specwhite text-darkblue">
+    <div className="w-full h-screen grid lg:grid-cols-[230px_auto] grid-cols-[50px_auto] bg-specwhite font-Avenir text-darkblue">
       <Sidebar />
       <div className="w-full relative">
         <AdminHeader />
