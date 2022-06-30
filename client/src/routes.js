@@ -19,12 +19,14 @@ import SidebarItem from "./components/sidebar/SidebarItem";
 
 import { AuthProvider } from "./contexts/JWTContext";
 
+import AuthLayout from "./layouts/Auth";
+import Dashboard from "./pages/Dashboard";
+
 //Admin
 import AdminLayout from "./components/layouts/Main/Admin";
 import AdminDashboard from "./pages/Admin/Dashboard";
-
-import AuthLayout from "./layouts/Auth";
-import Dashboard from "./pages/Dashboard";
+import AdminShipments from "./pages/Admin/Shipments";
+import AdminDeals from "./pages/Admin/Deals";
 
 const AllRoutes = [
   {
@@ -56,6 +58,14 @@ const AllRoutes = [
       {
         path: "dashboard",
         element: <AdminDashboard />,
+      },
+      {
+        path: "shipments",
+        element: <AdminShipments />,
+      },
+      {
+        path: "deals",
+        element: <AdminDeals />,
       },
     ],
   },

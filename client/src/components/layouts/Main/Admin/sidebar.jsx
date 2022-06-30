@@ -33,9 +33,9 @@ const Sidebar = () => {
           <p className="lg:block hidden">Dashboard</p>
         </Link>
         <Link
-          to="/admin/products"
+          to="/admin/deals"
           className={`flex items-center my-[20px] lg:pl-[40px] pl-[16px] w-full border-l-[3px] ${
-            location.pathname === "/admin/products"
+            location.pathname === "/admin/deals"
               ? "border-darkblue"
               : "border-transparent"
           } hover:border-darkblue transition ease-linear duration-300 py-[5px]`}
@@ -58,9 +58,9 @@ const Sidebar = () => {
           <p className="lg:block hidden">Deals</p>
         </Link>
         <Link
-          to="/admin/tracking"
+          to="/admin/shipments"
           className={`flex items-center my-[20px] lg:pl-[40px] pl-[16px] w-full border-l-[3px] ${
-            location.pathname === "/admin/tracking"
+            location.pathname === "/admin/shipments"
               ? "border-darkblue"
               : "border-transparent"
           } hover:border-darkblue transition ease-linear duration-300 py-[5px]`}
@@ -103,17 +103,6 @@ const Sidebar = () => {
             ></path>
           </svg>
           <p className="lg:block hidden">Shipments</p>
-        </Link>
-        <Link
-          to="/admin/users"
-          className={`flex items-center my-[20px] lg:pl-[40px] pl-[16px] w-full border-l-[3px] ${
-            location.pathname === "/admin/users"
-              ? "border-darkblue"
-              : "border-transparent"
-          } hover:border-darkblue transition ease-linear duration-300 py-[5px]`}
-        >
-          <FiUsers className="w-[18px] h-[18px] mr-[15px]" />
-          <p className="lg:block hidden">Users</p>
         </Link>
       </div>
     </div>
